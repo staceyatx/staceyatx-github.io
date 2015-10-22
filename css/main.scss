@@ -1,0 +1,602 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import 'reset';
+@import 'mixins';
+@import 'variables';
+@import 'grid';
+@import 'kindness';
+@import 'css-zen';
+@import 'saps';
+@import 'magnific-popup';
+
+body {
+	background-color: $cream;
+	width: 100%;
+
+	h1 {
+		font-family: $header-font;
+		text-transform: uppercase;
+	}
+
+	h2 {
+		font-family: $paragraph-font;
+		font-size: 20px;
+		color: $purple;
+		font-style: italic;
+	}
+
+	h3 {
+		font-family: $header-font;
+		text-transform: uppercase;
+		color: $orange;
+		font-size: 25px;
+	}
+
+	p {
+		font-family: $paragraph-font;
+		color: $purple;
+	}
+}
+
+header {
+	margin: 13px auto 0 auto;
+	background-color: $purple;
+	border-bottom: 4px solid $light-purple;
+	border-top: 4px solid $light-purple;
+	height: 60px;
+	width: 100%;
+
+	.container {
+		
+		.title {
+			display: none;
+		}
+
+		.image-wrapper {
+			float: left;
+			margin: 0 auto;
+			margin-top: -20px;
+			padding-left: 10px;
+			text-align: center;
+
+			.logo-image {
+				background: url(../images/logo4.png) 0 0 no-repeat;
+				background-size: 100%;
+				background-position: center;
+				// border-radius: 50%;
+				height: 120px;
+				width: 120px;
+				// background-color: #f3eade;
+				// border: 4px solid #90C5A9;
+			}
+		}
+
+		nav {
+			float: right; 
+			padding: 20px 10px 20px 0;
+
+			a {
+				vertical-align: center;
+				font-family: $header-font;
+				font-size: 20px;
+				text-transform: uppercase;
+				// padding: 20px 0;
+				text-decoration: none;
+				color: $cream;
+				margin: 5px;
+			}
+
+			a:last-child {
+				margin-right: 10px;
+			}
+			a:hover {
+				color: $seafoam;
+				border-bottom: 1px solid $orange;
+				// text-decoration: underline;
+				// text-decoration-color: $orange;
+			}	
+		}
+	}
+}
+
+.work {
+	// padding: 50px 1% 20px;
+	// margin: 0 auto;
+	// width: 98%;
+	// box-sizing: border-box;
+
+	// .kindness-project, .css-zen-garden, .goodreads, .saps, .high-trek {
+	// 	@include small-screen;
+
+	// 	.container a:hover .image-wrapper {
+	// 		border: 4px solid $orange;
+	// 	}
+
+	// 	.container a:hover img {
+	// 		-webkit-filter: grayscale(0%);
+	// 	}
+	// }
+
+	// .kindness-project, .goodreads, .high-trek {
+
+	// 	.container {
+
+	// 		.image-wrapper {
+	// 			float: left;
+	// 		}
+
+	// 		h1, h2 {
+	// 			text-align: left;
+	// 			padding-right: 50px;
+	// 		}
+	// 	}
+	// }
+
+	// .css-zen-garden, .saps {
+
+	// 	.image-wrapper {
+	// 		float: right;
+	// 	}
+
+	// 	h1, h2 {
+	// 		text-align: right;
+	// 	}
+	// }
+
+	// .high-trek {
+
+	// 	.container {
+	// 		border-bottom: none;
+		// }
+	// }
+}
+
+.info {
+	width: 98%;
+	background-color: $light-purple;
+	border-top: 4px solid $purple;
+	padding: 1%;
+
+	.about-me {
+		h1 {
+			font-family: $header-font;
+			color: $seafoam;
+			font-size: 28px;
+			padding: 20px 10px 15px 10px;
+		}
+
+		p {
+			font-family: $paragraph-font;
+			font-size: 16px;
+			color: $cream;
+			padding: 10px 0px 5px 10px;;
+			line-height: 160%;
+			width: 90%;
+		}
+		p:last-child {
+			padding-bottom: 20px;
+		}
+	}
+
+	.social-media {
+		h1 {
+			font-size: 28px;
+			color: $seafoam;
+		}
+
+		.facebook, .instagram, .twitter {
+			float: left;
+			path {
+				fill: $orange;
+			}
+		}
+
+		.instagram path {
+			fill: $orange;
+		}
+
+		// .twitter {
+		// 	float: left;
+		// }
+	}
+
+	.contact {
+		@include contact-form;
+		padding-left: 20px;
+
+		h1 {
+			font-family: $header-font;
+			color: $seafoam;
+			font-size: 28px;
+			padding: 20px 10px 20px 40px;
+		}
+	}
+
+
+// .triangle {
+//   width: 300px;
+//   height: 300px;
+//   background: black url(../images/csszen4.png);
+//   background-size: cover;
+//   margin: 28px auto;
+//   border-radius: 30px;
+// }
+
+// .test1 {
+//   -webkit-clip-path: polygon(0 100%, 50% 0, 100% 100%);
+
+// }
+// 	.test1 {
+// 	width: 280px;
+// 	height: 280px;
+// 	background: url(https://pbs.twimg.com/profile_images/616542814319415296/McCTpH_E.jpg) center center;
+//   background-size: cover;
+//   transition: 0.4s cubic-bezier(1, -1, 0, 2);
+//   clip-path: polygon(50% 5%, 0% 100%, 100% 100%);
+// }
+
+// 	.triangle-test {
+// 		.test1 {
+// 	width: 280px;
+// 	height: 280px;
+// 	background: url(../images/csszen4.png) center center;
+//   background-size: cover;
+//   transition: 0.4s cubic-bezier(1, -1, 0, 2);
+//   clip-path: polygon(50% 5%, 0% 100%, 100% 100%);
+// }
+// 	}
+
+}
+
+footer {
+	background-color: $purple;
+	height: 60px;
+	border-bottom: 4px solid $light-purple;
+	border-top: 4px solid $light-purple; 
+	box-sizing: border-box;
+	clear: both;
+	// margin-top: 20px;
+
+	.image-wrapper {
+		// width: 78px;
+		background: url(../images/logo6.png) 0 0 no-repeat;
+		background-size: 100%;
+		height: 70px;
+		width: 100px;
+		text-align: center;
+		margin: 0 auto 0 auto; 
+		
+		// img {
+		// 	// border-radius: 50%;
+		// 	height: 100%;
+		// 	width: 100%;
+		// 	// background-color: #f3eade;
+		// 	// border: 3px solid #90C5A9;
+		// 	// padding: 5px 6px;
+		// 	margin: 0 auto;
+		// 	box-sizing: border-box;
+		// }
+	}
+}
+
+@media screen and (min-width: 654px) {
+
+	header {
+		height: 70px;
+		margin-top: 13px;
+		width: 100%;
+		// z-index: 99;
+		// position: fixed;
+
+		.container {
+
+			.title {
+				display: inline-block;
+				font-family: $header-font;
+				float: left;
+				vertical-align: middle;
+				width: 41%;
+
+				h1 {
+					text-align: left;
+					padding: 22px 30px 10px 20px;
+					font-size: 28px;
+					text-transform: uppercase;
+					color: $seafoam;
+				}
+
+				h3 {
+					display: none;
+				}
+			}
+
+			.image-wrapper {
+				float: left;
+				margin: 0 auto;
+				margin: -25px auto 0 auto;
+				padding-left: 0;
+
+				.logo-image {
+					height: 140px;
+					width: 140px;
+				}
+			}
+
+			nav {
+				float: right;
+				margin: auto auto;
+				padding-top: 26px;
+				margin-left: -5px;
+				// padding-left: 20px;
+			}
+		}
+	}
+
+	.work {
+	// 	padding: 40px 20px;
+	// 	margin: 0 auto;
+	// 	width: 100%;
+	// 	box-sizing: border-box;
+
+	// 	.kindness-project, .css-zen-garden, .goodreads, .saps, .high-trek {
+	// 		@include medium-screen;
+	// 	}
+
+	// 	.kindness-project, .goodreads, .high-trek {
+	// 		clear: none;
+
+	// 		.container a:hover .image-wrapper {
+	// 			border: 6px solid $orange;
+	// 		}
+
+	// 		.container {
+	// 			float: left;
+	// 			padding-bottom: 20px;
+
+	// 			.image-wrapper {
+	// 				float: left;
+	// 			}
+
+	// 			h1, h2 {
+	// 				margin: 0 auto;
+	// 				width: 100%;
+	// 				text-align: center;
+	// 				clear: both;
+	// 				float: left;
+	// 				padding-right: 0;
+	// 			}
+	// 		}
+	// 	}
+
+	// 	.css-zen-garden, .saps {
+	// 		clear: none;
+
+	// 		.container a:hover .image-wrapper {
+	// 			border: 6px solid $orange;
+	// 		}
+	
+	// 		.container {
+	// 			float: right;
+
+	// 			.image-wrapper {
+	// 				float: right;
+	// 			}
+	// 		}
+			
+	// 		h1, h2 {
+	// 			margin: 0 auto;
+	// 			width: 100%;
+	// 			text-align: center;
+	// 			clear: both;
+	// 			float: right;
+	// 		}
+	// 	}
+
+	// 	.high-trek .container {
+
+	// 		padding-bottom: 80px;
+	// 	}
+	}
+
+	.info {
+		margin-top: 40px;
+		clear: both;
+		margin: 0 auto;
+
+		.about-me {
+			margin: 0 auto;
+			width: 80%;
+		}
+
+		.contact {
+			width: 80%;
+			margin: 0 auto;
+		}
+	}
+}
+@media screen and (min-width: 962px) {
+
+	header {
+		z-index: 99;
+		position: fixed;
+		height: 80px;
+		
+		.container {
+			max-width: 1125px;
+			margin: 0 auto;
+
+			.title {
+				// text-align: right;
+				
+				h1 {
+					float: left;
+					font-size: 30px;
+					// padding-right: 50px;
+					padding-top: 25px;
+				}
+
+				h3{
+					float: left;
+					text-align: left;
+					display: block;
+					font-size: 26px;
+					// color: $cream;
+					text-transform: uppercase;
+					padding-top: 28px;
+					margin-left: -10px;
+					// padding-right: 50px;
+				}
+			}
+
+			.image-wrapper {
+				margin-top: -30px;
+
+				.logo-image {
+					height: 180px;
+					width: 180px;
+				}
+			}
+
+			nav {
+				float: right;
+				padding-top: 26px;
+				font-size: 10px;
+				// margin-left: 15px;
+
+				a {
+					font-size: 25px;
+					margin: 10px 0 10px 15px;
+				}
+			}
+		}
+	}
+	
+	.work {
+		width: 100%;
+		max-width: 1300px;
+		background-color: $cream;
+		padding: 180px 0 40px 198px;
+		margin: 0 auto;
+		box-sizing: border-box;
+
+		h1,h2 {
+			display: none;
+		}
+	
+
+	.row {
+		background-color: $cream;
+		overflow: hidden;
+		/*margin: 2px 0;*/
+		width: 100%;
+	
+
+		.col-1 {
+			@include grid(4);
+			
+
+			img {
+	    		height: 100%;
+	   			width: 100%;
+	   			webkit-filter: brightness(30%);
+	   			
+
+	   			background-color: $purple;
+
+	   			// border: 2px solid $purple;
+	   		}
+	   	}
+
+   		#kindness, #goodreads, #saps {
+   			-webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
+    		display: inline-block;
+
+  		}
+		
+		#csszen {
+			-webkit-clip-path: polygon(0 100%, 50% 0, 100% 100%);
+			margin-right: -13%;
+    		margin-left: -13%;
+		}	
+
+		#goodreads {
+			float: left;
+			margin: 0 auto;
+		}
+
+		#saps {
+			margin-left: 21%;
+      		margin-top: 2.8%;
+			float: left;
+
+
+			
+		}
+		
+	}
+}
+
+	.info {
+		overflow: hidden;
+
+		.about-me {
+			padding: 35px 20px 0 10px;
+			float: left;
+			width: 40%;
+			max-width: 600px;
+			box-sizing: border-box;
+
+			p {
+				width: 100%;
+			}
+		}
+
+		.social-media {
+			padding-top: 40px;
+			float: left;
+			width: 20%;
+
+		}
+
+		.contact {
+			padding-top: 10px;
+			float: right;
+			// width: 50%;
+			max-width: 700px;
+			padding-bottom: 20px;
+			width: 40%;
+			padding-left: 0;
+
+			h1 {
+				padding-top: 30px;
+			}
+		}
+	}
+
+	footer {
+		
+		height: 60px;
+
+		// .image-wrapper {
+		// 	width: 100%;
+		// 	// max-width: 1000px;
+		// 	// width: 78px;
+		// 	margin: 0 auto;
+		// 	margin-top: -43px; 
+		// 	padding-right: 25px;
+			
+		// 	img {
+		// 		border-radius: 50%;
+		// 		height: 95px;
+		// 		width: 95px;
+		// 		background-color: #f3eade;
+		// 		border: 3px solid #90C5A9;
+		// 		padding: 5px 6px;
+		// 		margin: 0 auto;
+		// 		box-sizing: border-box;
+		// 	}
+		
+	}	
+}

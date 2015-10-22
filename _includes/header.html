@@ -1,0 +1,29 @@
+<header class="site-header">
+
+  <div class="wrapper container">
+        <a href="{{ site.baseurl }}/index.html"><div class="title">
+          <h1>Emily DeVoll</h1>
+          <h3>UI Designer</h3>
+        </div></a>
+
+        <div class="image-wrapper"><a href="{{ site.baseurl }}/index.html">
+          <div class="logo-image"></div>
+        </a></div>
+    <nav class="site-nav">
+      
+
+      <div class="trigger">
+        {% for page in site.pages %}
+          {% if page.title %}
+          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          {% endif %}
+        {% endfor %}
+          <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+

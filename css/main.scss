@@ -14,7 +14,7 @@
 body {
 	background-color: $cream;
 	width: 100%;
-
+}
 	h1 {
 		font-family: $header-font;
 		text-transform: uppercase;
@@ -38,7 +38,6 @@ body {
 		font-family: $paragraph-font;
 		color: $purple;
 	}
-}
 
 header {
 	margin: 13px auto 0 auto;
@@ -102,61 +101,229 @@ header {
 }
 
 .work {
-	// padding: 50px 1% 20px;
-	// margin: 0 auto;
-	// width: 98%;
-	// box-sizing: border-box;
+	padding: 50px 1%;
+	margin: 0 auto;
+	width: 98%;
 
-	// .kindness-project, .css-zen-garden, .goodreads, .saps, .high-trek {
-	// 	@include small-screen;
+	.backyard-art, .kindness-project, .css-zen-garden, .goodreads {
+		@include small-screen;
 
-	// 	.container a:hover .image-wrapper {
-	// 		border: 4px solid $orange;
-	// 	}
+		.container a:hover .image-wrapper {
+			border: 4px solid $purple;
+		}
 
-	// 	.container a:hover img {
-	// 		-webkit-filter: grayscale(0%);
-	// 	}
-	// }
+		.container a:hover img {
+			-webkit-filter: grayscale(0%);
+		}
+	}
 
-	// .kindness-project, .goodreads, .high-trek {
+	.backyard-art {
+		.image {
+			background: url(../images/colorful1.jpg) 0 0 no-repeat;
+			background-size: cover;
+			width: 100%;
+			padding-bottom: 100%;
+		}
+	}
 
-	// 	.container {
+	.kindness-project {
+		.image {
+			background: url(../images/king.png) 0 0 no-repeat;
+			background-size: cover;
+			width: 100%;
+			padding-bottom: 100%;
+		}
+	}
 
-	// 		.image-wrapper {
-	// 			float: left;
-	// 		}
+	.css-zen-garden {
+		.image {
+			background: url(../images/csszen.png) 0 0 no-repeat;
+			background-size: cover;
+			width: 100%;
+			padding-bottom: 100%;
+		}
+	}
 
-	// 		h1, h2 {
-	// 			text-align: left;
-	// 			padding-right: 50px;
-	// 		}
-	// 	}
-	// }
+	.goodreads {
+		.image {
+			background: url(../images/goodreads2.png) 0 0 no-repeat;
+			background-size: cover;
+			width: 100%;
+			padding-bottom: 100%;
+		}
+	}
 
-	// .css-zen-garden, .saps {
+	.backyard-art, .css-zen-garden {
 
-	// 	.image-wrapper {
-	// 		float: right;
-	// 	}
+		.container {
 
-	// 	h1, h2 {
-	// 		text-align: right;
-	// 	}
-	// }
+			.image-wrapper {
+				float: left;
+			}
 
-	// .high-trek {
+			h1, h2 {
+				text-align: left;
+				padding-right: 50px;
+			}
+		}
+	}
 
-	// 	.container {
-	// 		border-bottom: none;
-		// }
-	// }
+	.kindness-project, .goodreads {
+
+		.image-wrapper {
+			float: right;
+		}
+
+		h1, h2 {
+			text-align: right;
+		}
+	}
+
+	.high-trek {
+
+		.container {
+			border-bottom: none;
+		}
+	}
 }
 
+
+// .work {
+// 	clear: both;
+// 	padding-bottom: 20px;
+
+// 	.row {
+// 		h1 {
+// 			font-family: $header-font;
+// 			font-size: 25px;
+// 			text-transform: uppercase;
+// 			color: $seafoam;
+// 		// 	text-align: left;
+// 		// 	// padding-top: 20px;
+// 		// 	// padding-bottom: 5px;
+// 		// }
+
+// 		// h2 {
+// 		// 	font-family: $paragraph-font;
+// 		// 	font-size: 16px;
+// 		// 	color: $purple;
+// 		// 	font-style: italic;
+// 		// }
+// 		}
+
+// 		a {
+// 			text-decoration: none;
+
+// 			// &:nth-of-type(odd) h1{
+// 			// 	float: right;
+// 			// 	// float: right;
+// 			// }
+
+
+// 			// &:nth-of-type(odd) h2{
+// 			// 	float: right;
+// 			// 	// float: right;
+// 			// }
+
+// 			// &:nth-of-type(even) h1 {
+// 			// 	float: right;
+// 			// }
+
+// 			// &:nth-of-type(even) h2 {
+// 			// 	text-align: right;;
+// 			// }
+// 		}
+
+// 		a:hover {
+
+// 			h1 {
+// 				color: $orange;
+// 				border-bottom: 2px solid $seafoam;
+
+// 			}
+// 		}
+// 	}
+
+	
+// 	.col-1 {
+// 		img {
+// 			width: 180px;
+// 			height: 180px;
+// 		}
+// 	}
+
+// 	#kindness {
+
+// 	}
+
+// 	#kindness, #goodreads, {
+// 		-webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
+// 		display: inline-block;
+// 		// clear: both;
+// 		// margin: 10px 0;
+// 	}
+// 	#csszen, #saps, {
+// 		-webkit-clip-path: polygon(100% 100%, 100% 0, 0 50%);
+// 		display: inline-block;
+// 		float: right;
+// 		// clear: both;
+// 	}
+// 	// padding: 50px 1% 20px;
+// 	// margin: 0 auto;
+// 	// width: 98%;
+// 	// box-sizing: border-box;
+
+// 	// .kindness-project, .css-zen-garden, .goodreads, .saps, .high-trek {
+// 	// 	@include small-screen;
+
+// 	// 	.container a:hover .image-wrapper {
+// 	// 		border: 4px solid $orange;
+// 	// 	}
+
+// 	// 	.container a:hover img {
+// 	// 		-webkit-filter: grayscale(0%);
+// 	// 	}
+// 	// }
+
+// 	// .kindness-project, .goodreads, .high-trek {
+
+// 	// 	.container {
+
+// 	// 		.image-wrapper {
+// 	// 			float: left;
+// 	// 		}
+
+// 	// 		h1, h2 {
+// 	// 			text-align: left;
+// 	// 			padding-right: 50px;
+// 	// 		}
+// 	// 	}
+// 	// }
+
+// 	// .css-zen-garden, .saps {
+
+// 	// 	.image-wrapper {
+// 	// 		float: right;
+// 	// 	}
+
+// 	// 	h1, h2 {
+// 	// 		text-align: right;
+// 	// 	}
+// 	// }
+
+// 	// .high-trek {
+
+// 	// 	.container {
+// 	// 		border-bottom: none;
+// 		// }
+// 	// }
+// }
+
 .info {
+	clear: both;
 	width: 98%;
-	background-color: $light-purple;
-	border-top: 4px solid $purple;
+	background-color: $purple;
+	border-top: 4px solid $light-purple;
 	padding: 1%;
 
 	.about-me {
@@ -213,41 +380,6 @@ header {
 			padding: 20px 10px 20px 40px;
 		}
 	}
-
-
-// .triangle {
-//   width: 300px;
-//   height: 300px;
-//   background: black url(../images/csszen4.png);
-//   background-size: cover;
-//   margin: 28px auto;
-//   border-radius: 30px;
-// }
-
-// .test1 {
-//   -webkit-clip-path: polygon(0 100%, 50% 0, 100% 100%);
-
-// }
-// 	.test1 {
-// 	width: 280px;
-// 	height: 280px;
-// 	background: url(https://pbs.twimg.com/profile_images/616542814319415296/McCTpH_E.jpg) center center;
-//   background-size: cover;
-//   transition: 0.4s cubic-bezier(1, -1, 0, 2);
-//   clip-path: polygon(50% 5%, 0% 100%, 100% 100%);
-// }
-
-// 	.triangle-test {
-// 		.test1 {
-// 	width: 280px;
-// 	height: 280px;
-// 	background: url(../images/csszen4.png) center center;
-//   background-size: cover;
-//   transition: 0.4s cubic-bezier(1, -1, 0, 2);
-//   clip-path: polygon(50% 5%, 0% 100%, 100% 100%);
-// }
-// 	}
-
 }
 
 footer {
@@ -281,7 +413,7 @@ footer {
 	}
 }
 
-@media screen and (min-width: 654px) {
+@media screen and (min-width: 660px) {
 
 	header {
 		height: 70px;
@@ -335,71 +467,70 @@ footer {
 	}
 
 	.work {
-	// 	padding: 40px 20px;
-	// 	margin: 0 auto;
-	// 	width: 100%;
-	// 	box-sizing: border-box;
+		padding: 150px 20px;
+		margin: 0 auto;
+		width: 100%;
+		box-sizing: border-box;
 
-	// 	.kindness-project, .css-zen-garden, .goodreads, .saps, .high-trek {
-	// 		@include medium-screen;
-	// 	}
+		.backyard-art, .kindness-project, .css-zen-garden, .goodreads {
+			@include medium-screen;
+		}
 
-	// 	.kindness-project, .goodreads, .high-trek {
-	// 		clear: none;
+		.backyard-art, .css-zen-garden {
+			clear: none;
 
-	// 		.container a:hover .image-wrapper {
-	// 			border: 6px solid $orange;
-	// 		}
+			.container a:hover .image-wrapper {
+				border: 4px solid $purple;
+			}
 
-	// 		.container {
-	// 			float: left;
-	// 			padding-bottom: 20px;
+			.container {
+				float: left;
+				padding-bottom: 20px;
 
-	// 			.image-wrapper {
-	// 				float: left;
-	// 			}
+				.image-wrapper {
+					float: left;
+				}
 
-	// 			h1, h2 {
-	// 				margin: 0 auto;
-	// 				width: 100%;
-	// 				text-align: center;
-	// 				clear: both;
-	// 				float: left;
-	// 				padding-right: 0;
-	// 			}
-	// 		}
-	// 	}
+				h1, h2 {
+					margin: 0 auto;
+					width: 100%;
+					text-align: center;
+					clear: both;
+					float: left;
+					padding-right: 0;
+				}
+			}
+		}
 
-	// 	.css-zen-garden, .saps {
-	// 		clear: none;
+		.kindness-project, .goodreads {
+			clear: none;
 
-	// 		.container a:hover .image-wrapper {
-	// 			border: 6px solid $orange;
-	// 		}
+			.container a:hover .image-wrapper {
+				border: 4px solid $purple;
+			}
 	
-	// 		.container {
-	// 			float: right;
+			.container {
+				float: right;
 
-	// 			.image-wrapper {
-	// 				float: right;
-	// 			}
-	// 		}
+				.image-wrapper {
+					float: right;
+				}
+			}
 			
-	// 		h1, h2 {
-	// 			margin: 0 auto;
-	// 			width: 100%;
-	// 			text-align: center;
-	// 			clear: both;
-	// 			float: right;
-	// 		}
-	// 	}
+			h1, h2 {
+				margin: 0 auto;
+				width: 100%;
+				text-align: center;
+				clear: both;
+				float: right;
+			}
+		}
 
-	// 	.high-trek .container {
+		.high-trek .container {
 
-	// 		padding-bottom: 80px;
-	// 	}
+			padding-bottom: 80px;
+		}
 	}
-
 	.info {
 		margin-top: 40px;
 		clear: both;
@@ -416,7 +547,7 @@ footer {
 		}
 	}
 }
-@media screen and (min-width: 962px) {
+@media screen and (min-width: 862px) {
 
 	header {
 		z-index: 99;
@@ -424,7 +555,7 @@ footer {
 		height: 80px;
 		
 		.container {
-			max-width: 1125px;
+			max-width: 1200px;
 			margin: 0 auto;
 
 			.title {
@@ -451,6 +582,7 @@ footer {
 			}
 
 			.image-wrapper {
+				text-align: center;
 				margin-top: -30px;
 
 				.logo-image {
@@ -474,69 +606,72 @@ footer {
 	}
 	
 	.work {
-		width: 100%;
-		max-width: 1300px;
-		background-color: $cream;
-		padding: 180px 0 40px 198px;
-		margin: 0 auto;
+		// max-width: 1300px;
+		margin-top: 0px;
+		padding-top: 180px;
+		
+		overflow: hidden;
 		box-sizing: border-box;
 
-		h1,h2 {
+		h1, h2 {
 			display: none;
 		}
-	
-
-	.row {
-		background-color: $cream;
-		overflow: hidden;
-		/*margin: 2px 0;*/
-		width: 100%;
-	
-
-		.col-1 {
-			@include grid(4);
-			
-
-			img {
-	    		height: 100%;
-	   			width: 100%;
-	   			webkit-filter: brightness(30%);
-	   			
-
-	   			background-color: $purple;
-
-	   			// border: 2px solid $purple;
-	   		}
-	   	}
-
-   		#kindness, #goodreads, #saps {
-   			-webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
-    		display: inline-block;
-
-  		}
-		
-		#csszen {
-			-webkit-clip-path: polygon(0 100%, 50% 0, 100% 100%);
-			margin-right: -13%;
-    		margin-left: -13%;
-		}	
-
-		#goodreads {
-			float: left;
-			margin: 0 auto;
-		}
-
-		#saps {
-			margin-left: 21%;
-      		margin-top: 2.8%;
-			float: left;
-
-
-			
-		}
-		
 	}
-}
+	// .work {
+	// 	width: 100%;
+	// 	max-width: 1300px;
+	// 	background-color: $cream;
+	// 	padding: 180px 0 40px 198px;
+	// 	margin: 0 auto;
+	// 	box-sizing: border-box;
+
+	// 	h1,h2 {
+	// 		display: none;
+	// 	}
+	
+	// 	.row {
+	// 		background-color: $cream;
+	// 		overflow: hidden;
+	// 		/*margin: 2px 0;*/
+	// 		width: 100%;
+		
+
+	// 		.col-1 {
+	// 			@include grid(4);
+				
+
+	// 			img {
+	// 	    		height: 100%;
+	// 	   			width: 100%;
+	// 	   			webkit-filter: brightness(30%);
+	// 	   			background-color: $purple;
+	// 	   			// border: 2px solid $purple;
+	// 	   		}
+	// 	   	}
+
+	//    		#kindness, #goodreads, #saps {
+	//    			-webkit-clip-path: polygon(100% 0, 0 0, 50% 100%);
+	//     		display: inline-block;
+	//   		}
+			
+	// 		#csszen {
+	// 			-webkit-clip-path: polygon(0 100%, 50% 0, 100% 100%);
+	// 			margin-right: -13%;
+	//     		margin-left: -13%;
+	// 		}	
+
+	// 		#goodreads {
+	// 			float: left;
+	// 			margin: 0 auto;
+	// 		}
+
+	// 		#saps {
+	// 			margin-left: 21%;
+	//       		margin-top: 2.8%;
+	// 			float: left;	
+	// 		}	
+	// 	}
+	// }
 
 	.info {
 		overflow: hidden;

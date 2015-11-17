@@ -609,12 +609,29 @@ footer {
 		// max-width: 1300px;
 		margin-top: 0px;
 		padding-top: 180px;
-		
 		overflow: hidden;
 		box-sizing: border-box;
 
 		h1, h2 {
 			display: none;
+		}
+
+		// a:hover {
+		// 	h1 {
+		// 		display: inline-block;
+		// 		margin-top: -100px;
+		// 	}
+		// }
+
+		.backyard-art, .kindness-project, .css-zen-garden, .goodreads {
+			.container {
+				width: 50%;
+
+				.image-wrapper {
+					width: 100%;
+				}
+
+			}
 		}
 	}
 	// .work {

@@ -77,7 +77,7 @@
       text-align: center;
       
       img {
-        height: 9.375em;
+        height: 138px;
         max-width: 100%;
         text-align: center;
       }
@@ -104,13 +104,25 @@
     }
 
 
-    .parent-container, .parent-container3 {
+    .parent-container {
       // max-width: 800px;
       margin: 0 auto;
       text-align: center;
 
       img {
-        height: 9.375em;
+        height: 81px;
+        max-width: 100%;
+        text-align: center;
+      }
+    }
+
+    .parent-container3 {
+      // max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+
+      img {
+        height: 120px;
         max-width: 100%;
         text-align: center;
       }
@@ -132,6 +144,7 @@
       color: $purple;
       margin: 20px 5% 0 0;
       border-bottom: 2px solid $orange;
+      line-height: 25px;
     }
 
     a:hover {

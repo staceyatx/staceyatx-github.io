@@ -51,7 +51,7 @@
         img {
           margin: 0 auto;
             height: 350px;
-            width: 170px;
+            // width: 170px;
             // float: left;
           }
         }
@@ -63,7 +63,7 @@
     .kindness-research {
 
       h3 {
-        padding: 30px 0 20px 0;
+        padding: 30px 0 30px 0;
       }
 
 
@@ -131,6 +131,7 @@
         text-decoration: none;
         color: $purple;
         margin: 20px 5% 0 0;
+        border-bottom: 2px solid $orange;
       }
 
       a:hover {
@@ -147,44 +148,119 @@
 @media screen and (min-width: 660px) {
  
   .kindness {
-    max-width: 700px;
+    padding: 50px 20px 20px 20px;
+
+    h1 {
+      font-size: 35px;
+    }
+    // max-width: 700px;
+
+    p {
+      font-size: 16px;
+    }
     
     .kindness-about {
-      width: 80%;
+      width: 90%;
+      max-width: 630px;
       
       .parent-container1 {
         padding-right: 20px;
         float: left;
+        margin-bottom: 0;
       }
 
       p {
-        padding-left: 10px;
-        // float: right;
+        padding-left: 3%;
         clear: none;
+        padding-top: 10px;
+        font-size: 17px;
+      
+      &:first-of-type {
+        padding-top: 30px;
       }
+
+      }
+
     }
 
     .kindness-research {
       clear: both;
+
+      h3 {
+        padding-top: 40px;
+      }
+
+      .parent-container2 {
+        img {
+          height: 275px;
+        }
+      }
+    }
+
+    .kindness-design {
+
+      .parent-container {
+        img {
+          height: 180px;
+        }
+      }
     }
   }
 }
-// @media (max-width: 653px) {
-//   #photos {
-//   -moz-column-count:    1;
-//   -webkit-column-count: 1;
-//   column-count:         1;
-//   }
-//   @media (min-width: 654px) {
-//   #photos {
-//   -moz-column-count:    2;
-//   -webkit-column-count: 2;
-//   column-count:         2;
-//   }
 
-//   @media (min-width: 817px) {
-//   #photos {
-//   -moz-column-count:    3;
-//   -webkit-column-count: 3;
-//   column-count:         3;
-//   }
+@media screen and (min-width: 862px) {
+
+  #portfolio-pages {
+    position: absolute;
+  }
+
+  .kindness {
+    padding-top: 160px;
+    max-width: 850px;
+
+    h1 {
+      font-size: 40px;
+    }
+
+    h2 {
+      font-size: 22px;
+    }
+
+    h3 {
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .kindness-about {
+      padding-top: 10px;
+      max-width: 630px;
+
+      p {
+        font-size: 17px;
+      }
+
+    }
+
+    .kindness-research {
+
+      .parent-container2 {
+        img {
+          height: 300px;
+        }
+      }
+    }
+
+    .kindness-design {
+
+      .parent-container {
+        img {
+          height: 200px;
+        }
+      }
+    }
+
+  }
+}

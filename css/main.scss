@@ -44,7 +44,7 @@ header {
 	background-color: $purple;
 	border-bottom: 4px solid $light-purple;
 	border-top: 4px solid $light-purple;
-	height: 50px;
+	height: 45px;
 	width: 100%;
 
 	.container {
@@ -74,12 +74,12 @@ header {
 
 		nav {
 			float: right; 
-			padding: 16px 3px 20px 0;
+			padding: 15px 3px 20px 0;
 
 			a {
 				vertical-align: center;
 				font-family: $header-font;
-				font-size: 18px;
+				font-size: 16px;
 				text-transform: uppercase;
 				// padding: 20px 0;
 				text-decoration: none;

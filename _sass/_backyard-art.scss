@@ -1,0 +1,295 @@
+.backyard {
+  padding: 50px 10px 20px 10px;
+  // max-width: 1000px;
+  margin: 0 auto;
+
+  h1 {
+    font-family: $header-font;
+    // padding-top: 200px;
+    font-size: 32px;
+    color: $seafoam;
+    padding-bottom: 10px;
+
+  }
+
+  h2 {
+    padding-bottom: 30px;
+  }
+
+  p {
+        font-family: $paragraph-font;
+        color: $purple;
+        font-size: 15px;
+        line-height: 160%;
+        // max-width: 900px;
+        margin: 0 auto;
+        padding-bottom: 10px;
+        text-indent: 20px;
+      }
+
+  .backyard-about{
+    margin: 0 auto;
+
+    // max-width: 900px;
+    // padding: 0 30px;
+      // p {
+      //   margin-left: 40px;
+      // }
+
+      .parent-container1 {
+        // max-width: 800px;
+        margin: 0 auto;
+        // float: left;
+        width: 300px;
+        // padding-left: 10%;
+        // width: 50%;
+        // padding-right: 20px;
+        margin-bottom: 10px;
+        margin-top: 5px;
+      img {
+        margin: 0 auto;
+          height: 200px;
+          // width: 170px;
+          // float: left;
+        }
+      }
+
+      p {
+        clear: left;
+      }
+    }
+  .backyard-research {
+
+    h3 {
+      padding: 30px 0 30px 0;
+    }
+
+
+    p:first-of-type {
+      padding-top: 10px;
+    }
+
+    .parent-container2 {
+      // max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      
+      img {
+        height: 9.375em;
+        max-width: 100%;
+        text-align: center;
+      }
+    }
+
+    // h2 {
+    //   padding-top: 
+    // }
+  }
+  .backyard-design {
+    margin: 0 auto;
+
+    h3 {
+      padding: 30px 0 30px 0;
+    }
+
+    p {
+      clear: both;
+      padding-top: 5px;
+    }
+
+    p:first-of-type {
+      padding-top: 10px;
+    }
+
+
+    .parent-container, .parent-container3 {
+      // max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+
+      img {
+        height: 9.375em;
+        max-width: 100%;
+        text-align: center;
+      }
+    }
+  }
+
+  .backyard-icons {
+    margin: 0 auto;
+
+    h3 {
+      padding: 30px 0 30px 0;
+    }
+
+    p {
+      clear: both;
+      padding-top: 5px;
+    }
+
+    p:first-of-type {
+      padding-top: 10px;
+    }
+
+
+    .parent-container {
+      // max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+
+      img {
+        height: 80px;
+        max-width: 100%;
+        text-align: center;
+      }
+    }
+
+  }
+
+  .backyard-more {
+    padding-bottom: 40px;
+
+    h3 {
+      padding: 30px 0 20px 0;
+    }
+
+    a {
+      font-family: $paragraph-font;
+      font-style: italic;
+      font-size: 18px;
+      text-decoration: none;
+      color: $purple;
+      margin: 20px 5% 0 0;
+      border-bottom: 2px solid $orange;
+    }
+
+    a:hover {
+      border-bottom: 2px solid $orange;
+      color: $seafoam;
+
+    }
+  }
+}
+
+
+
+
+@media screen and (min-width: 660px) {
+ 
+  .backyard {
+    padding: 50px 20px 20px 20px;
+
+    h1 {
+      font-size: 35px;
+    }
+    // max-width: 700px;
+
+    p {
+      font-size: 16px;
+    }
+    
+    .backyard-about {
+      width: 90%;
+      max-width: 630px;
+      
+      .parent-container1 {
+        padding-right: 20px;
+        float: left;
+        margin-bottom: 0;
+      }
+
+      p {
+        padding-left: 3%;
+        clear: none;
+        padding-top: 10px;
+        font-size: 17px;
+      
+      &:first-of-type {
+        padding-top: 30px;
+      }
+
+      }
+
+    }
+
+    .backyard-research {
+      clear: both;
+
+      h3 {
+        padding-top: 40px;
+      }
+
+      .parent-container2 {
+        img {
+          height: 275px;
+        }
+      }
+    }
+
+    .backyard-design {
+
+      .parent-container, .parent-container3 {
+        img {
+          height: 180px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 862px) {
+
+  #portfolio-pages {
+    position: absolute;
+  }
+
+  .backyard {
+    padding-top: 160px;
+    max-width: 850px;
+
+    h1 {
+      font-size: 40px;
+    }
+
+    h2 {
+      font-size: 22px;
+    }
+
+    h3 {
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .backyard-about {
+      padding-top: 10px;
+      max-width: 630px;
+
+      p {
+        font-size: 17px;
+      }
+
+    }
+
+    .backyard-research {
+
+      .parent-container2 {
+        img {
+          height: 300px;
+        }
+      }
+    }
+
+    .backyard-design {
+
+      .parent-container, .parent-container3 {
+        img {
+          height: 200px;
+        }
+      }
+    }
+
+  }
+}

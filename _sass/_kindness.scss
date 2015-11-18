@@ -29,7 +29,7 @@
           text-indent: 20px;
         }
 
-    .kind1{
+    .kindness-about{
       margin: 0 auto;
 
       // max-width: 900px;
@@ -60,21 +60,34 @@
           clear: left;
         }
       }
-    .kind2 {
+    .kindness-research {
 
       h3 {
         padding: 30px 0 20px 0;
       }
 
-      p:first-child {
-        padding-top: 30px;
+
+      p:first-of-type {
+        padding-top: 10px;
+      }
+
+      .parent-container2 {
+        // max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+        
+        img {
+          height: 9.375em;
+          max-width: 100%;
+          text-align: center;
+        }
       }
 
       // h2 {
       //   padding-top: 
       // }
     }
-    .kind3 {
+    .kindness-design {
       margin: 0 auto;
 
       h3 {
@@ -95,6 +108,7 @@
         // max-width: 800px;
         margin: 0 auto;
         text-align: center;
+
         img {
           height: 9.375em;
           max-width: 100%;
@@ -103,7 +117,7 @@
       }
     }
 
-    .kind4 {
+    .kindness-more {
       padding-bottom: 40px;
 
       h3 {

@@ -17,6 +17,12 @@ $('.parent-container2').magnificPopup({
   // other options
 });
 
+$('.parent-container3').magnificPopup({
+  delegate: 'a', // child items selector, by clicking on it popup will open
+  type: 'image'
+  // other options
+});
+
 $('.gallery-item').magnificPopup({
   type: 'image',
   gallery:{

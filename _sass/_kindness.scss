@@ -11,7 +11,7 @@
       font-size: 32px;
       color: $seafoam;
       padding-bottom: 10px;
-      width: 100%;
+
     }
 
     h2 {
@@ -42,7 +42,7 @@
           // max-width: 800px;
           margin: 0 auto;
           // float: left;
-          width: 50%;
+          width: 170px;
           // padding-left: 10%;
           // width: 50%;
           // padding-right: 20px;
@@ -50,7 +50,7 @@
           margin-top: 5px;
         img {
           margin: 0 auto;
-            height: 320px;
+            height: 350px;
             width: 170px;
             // float: left;
           }
@@ -61,11 +61,9 @@
         }
       }
     .kind2 {
-      clear: both;
-      padding: 0px 30px 0 10px;
 
       h3 {
-        padding: 20px 0 20px 0;
+        padding: 30px 0 20px 0;
       }
 
       p:first-child {
@@ -77,12 +75,21 @@
       // }
     }
     .kind3 {
-      padding: 0 10px 40px 30px;
+      margin: 0 auto;
+
+      h3 {
+        padding: 30px 0 30px 0;
+      }
 
       p {
         clear: both;
+        padding-top: 5px;
+      }
+
+      p:first-of-type {
         padding-top: 20px;
       }
+
 
       .parent-container {
         // max-width: 800px;
@@ -93,6 +100,29 @@
           max-width: 100%;
           text-align: center;
         }
+      }
+    }
+
+    .kind4 {
+      padding-bottom: 40px;
+
+      h3 {
+        padding: 30px 0 20px 0;
+      }
+
+      a {
+        font-family: $paragraph-font;
+        font-style: italic;
+        font-size: 18px;
+        text-decoration: none;
+        color: $purple;
+        margin: 20px 15px 0 0;
+      }
+
+      a:hover {
+        border-bottom: 2px solid $orange;
+        color: $seafoam;
+
       }
     }
   }

@@ -57,7 +57,7 @@ header {
 			float: left;
 			margin: 0 auto;
 			margin-top: -20px;
-			padding-left: 5px;
+			padding-left: 0px;
 			text-align: center;
 
 			.logo-image {
@@ -74,7 +74,7 @@ header {
 
 		nav {
 			float: right; 
-			padding: 16px 10px 20px 0;
+			padding: 16px 3px 20px 0;
 
 			a {
 				vertical-align: center;
@@ -88,7 +88,7 @@ header {
 			}
 
 			a:last-child {
-				margin-right: 10px;
+				// margin-right: 10px;
 			}
 			a:hover {
 				color: $seafoam;
@@ -178,146 +178,7 @@ header {
 			text-align: right;
 		}
 	}
-
-	.high-trek {
-
-		.container {
-			border-bottom: none;
-		}
-	}
 }
-
-
-// .work {
-// 	clear: both;
-// 	padding-bottom: 20px;
-
-// 	.row {
-// 		h1 {
-// 			font-family: $header-font;
-// 			font-size: 25px;
-// 			text-transform: uppercase;
-// 			color: $seafoam;
-// 		// 	text-align: left;
-// 		// 	// padding-top: 20px;
-// 		// 	// padding-bottom: 5px;
-// 		// }
-
-// 		// h2 {
-// 		// 	font-family: $paragraph-font;
-// 		// 	font-size: 16px;
-// 		// 	color: $purple;
-// 		// 	font-style: italic;
-// 		// }
-// 		}
-
-// 		a {
-// 			text-decoration: none;
-
-// 			// &:nth-of-type(odd) h1{
-// 			// 	float: right;
-// 			// 	// float: right;
-// 			// }
-
-
-// 			// &:nth-of-type(odd) h2{
-// 			// 	float: right;
-// 			// 	// float: right;
-// 			// }
-
-// 			// &:nth-of-type(even) h1 {
-// 			// 	float: right;
-// 			// }
-
-// 			// &:nth-of-type(even) h2 {
-// 			// 	text-align: right;;
-// 			// }
-// 		}
-
-// 		a:hover {
-
-// 			h1 {
-// 				color: $orange;
-// 				border-bottom: 2px solid $seafoam;
-
-// 			}
-// 		}
-// 	}
-
-	
-// 	.col-1 {
-// 		img {
-// 			width: 180px;
-// 			height: 180px;
-// 		}
-// 	}
-
-// 	#kindness {
-
-// 	}
-
-// 	#kindness, #goodreads, {
-// 		-webkit-clip-path: polygon(100% 50%, 0 0, 0 100%);
-// 		display: inline-block;
-// 		// clear: both;
-// 		// margin: 10px 0;
-// 	}
-// 	#csszen, #saps, {
-// 		-webkit-clip-path: polygon(100% 100%, 100% 0, 0 50%);
-// 		display: inline-block;
-// 		float: right;
-// 		// clear: both;
-// 	}
-// 	// padding: 50px 1% 20px;
-// 	// margin: 0 auto;
-// 	// width: 98%;
-// 	// box-sizing: border-box;
-
-// 	// .kindness-project, .css-zen-garden, .goodreads, .saps, .high-trek {
-// 	// 	@include small-screen;
-
-// 	// 	.container a:hover .image-wrapper {
-// 	// 		border: 4px solid $orange;
-// 	// 	}
-
-// 	// 	.container a:hover img {
-// 	// 		-webkit-filter: grayscale(0%);
-// 	// 	}
-// 	// }
-
-// 	// .kindness-project, .goodreads, .high-trek {
-
-// 	// 	.container {
-
-// 	// 		.image-wrapper {
-// 	// 			float: left;
-// 	// 		}
-
-// 	// 		h1, h2 {
-// 	// 			text-align: left;
-// 	// 			padding-right: 50px;
-// 	// 		}
-// 	// 	}
-// 	// }
-
-// 	// .css-zen-garden, .saps {
-
-// 	// 	.image-wrapper {
-// 	// 		float: right;
-// 	// 	}
-
-// 	// 	h1, h2 {
-// 	// 		text-align: right;
-// 	// 	}
-// 	// }
-
-// 	// .high-trek {
-
-// 	// 	.container {
-// 	// 		border-bottom: none;
-// 		// }
-// 	// }
-// }
 
 .info {
 	clear: both;
@@ -462,6 +323,10 @@ footer {
 				padding-top: 26px;
 				margin-left: -5px;
 				// padding-left: 20px;
+
+				a {
+					font-size: 20px;
+				}
 			}
 		}
 	}

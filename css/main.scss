@@ -278,7 +278,7 @@ footer {
 @media screen and (min-width: 660px) {
 
 	header {
-		height: 70px;
+		height: 60px;
 		margin-top: 13px;
 		width: 100%;
 		// z-index: 99;
@@ -295,7 +295,7 @@ footer {
 
 				h1 {
 					text-align: left;
-					padding: 22px 30px 10px 20px;
+					padding: 16px 25px 10px 15px;
 					font-size: 28px;
 					text-transform: uppercase;
 					color: $seafoam;
@@ -321,12 +321,16 @@ footer {
 			nav {
 				float: right;
 				margin: auto auto;
-				padding-top: 26px;
+				padding-top: 20px;
 				margin-left: -5px;
 				// padding-left: 20px;
 
 				a {
 					font-size: 20px;
+				}
+
+				a:last-child {
+					margin-right: 15px;
 				}
 			}
 		}
@@ -438,7 +442,7 @@ footer {
 					float: left;
 					text-align: left;
 					display: block;
-					font-size: 26px;
+					font-size: 25px;
 					// color: $cream;
 					text-transform: uppercase;
 					padding-top: 28px;

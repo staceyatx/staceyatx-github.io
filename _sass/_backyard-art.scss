@@ -25,6 +25,17 @@
     margin: 0 auto;
     padding-bottom: 10px;
     text-indent: 20px;
+
+    a {
+        color: $purple;
+        text-decoration: none;
+        font-style: italic;
+        border-bottom: 2px solid $orange;
+      }
+
+      a:hover {
+        color: $seafoam;
+      }
   }
 
   .backyard-about{
@@ -83,24 +94,7 @@
       &:first-of-type {
         padding-top: 10px;
       }
-
-      a {
-        color: $purple;
-        text-decoration: none;
-        font-style: italic;
-        border-bottom: 2px solid $orange;
-      }
-
-      a:hover {
-        color: $seafoam;
-      }
     }
-
-    p:first-of-type {
-      padding-top: 10px;
-    }
-
-   
 
     span {
       font-style: italic;
@@ -120,7 +114,7 @@
     .parent-container3 {
       margin: 0 auto;
       text-align: center;
-      padding-top: 10px;
+      padding: 5px 0;
 
       img {
         height: 150px;
@@ -135,7 +129,7 @@
 
     p {
       clear: both;
-      padding-top: 5px;
+      // padding-top: 5px;
     }
 
     p:first-of-type {
@@ -158,7 +152,7 @@
     padding-bottom: 40px;
 
     h3 {
-      padding: 30px 0 20px 0;
+      padding: 40px 0 20px 0;
     }
 
     a {
@@ -186,6 +180,7 @@
 
     h1 {
       font-size: 35px;
+      clear: both;
     }
 
     p {
@@ -193,8 +188,8 @@
     }
     
     .backyard-about {
-      width: 90%;
-      max-width: 660px;
+      // width: 90%;
+      // max-width: 650px;
       
       .parent-container1:first-of-type {
         padding-right: 20px;
@@ -203,38 +198,28 @@
       }
 
       .parent-container1:last-of-type {
-        margin-right: -20px;
-        padding-left: 10px;
-        margin-top: -45px;
+        // margin-right: -20px;
+        padding-left: 20px;
+        margin-top: -15px;
         padding-top: 20px;
         float: right;
         margin-bottom: 0;
-        width: 100px;
-        text-align: right;
+        // width: 100px;
+        // text-align: right;
       }
 
       p {
-        padding-left: 3%;
         clear: none;
-        // padding-top: 10px;
         font-size: 17px;
       
         &:first-of-type {
-          padding-top: 30px;
+          // padding-top: 30px;
         }
-
-        // &:nth-of-type(2) {
-        //   text-indent: 0px;
-        // }
       }
     }
 
     .backyard-research {
       clear: both;
-
-      // h3 {
-      //   padding-top: 40px;
-      // }
 
       .parent-container2 {
         img {
@@ -291,21 +276,28 @@
 
     .backyard-about {
       padding-top: 10px;
-      max-width: 700px;
+      max-width: 780px;
 
       p {
         font-size: 17px;
       
-      &:nth-of-type(2) {
-        text-indent: 0px;
-      }
-
+        &:nth-of-type(2) {
+          text-indent: 0px;
+        }
       }
 
       .parent-container1:first-of-type {
 
         img {
-          height: 230px;
+          height: 250px;
+        }
+      }
+
+      .parent-container1:last-of-type {
+        margin-top: -45px;
+
+        img {
+          height: 340px;
         }
       }
     }

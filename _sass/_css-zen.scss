@@ -1,48 +1,157 @@
 .css-zen {
-	padding: 220px 30px 20px 30px;
-	max-width: 1100px;
-	margin: 0 auto;
+  padding: 50px 10px 20px 10px;
+  margin: 0 auto;
 
-	h1 {
-		font-size: 32px;
-	    color: $seafoam;
-	    padding-bottom: 10px;
-	    // padding-left: 20px;
-	}
+  h1 {
+    font-family: $header-font;
+    font-size: 32px;
+    color: $seafoam;
+    padding-bottom: 10px;
+  }
 
-	h2 {
-		padding-bottom: 40px;
-		
-	}
+  h2 {
+    padding-bottom: 30px;
+  }
 
-	.css-zen-left {
-		float: left;
-		width: 50%;
-		margin-top: -5px;
-		padding-right: 10px;
-		box-sizing: border-box;
+  h3 {
+      padding: 40px 0 25px 0;
+    }
 
-		.image-wrapper {
-			width: 100%;
+  p {
+    font-family: $paragraph-font;
+    color: $purple;
+    font-size: 15px;
+    line-height: 160%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    text-indent: 20px;
+  }
 
-			img {
-				width: 100%;
-			}
-		}
-	}
+  .css-zen-about{
+    margin: 0 auto;
 
-	.css-zen-right {
-		float: right;
-		width: 50%;
-
-		p {
-			font-size: 16px;
-        line-height: 160%;
-        max-width: 780px;
+    .parent-container1 {
+      margin: 0 auto;
+      // width: 300px;
+      margin-bottom: 10px;
+      margin-top: 5px;
+      text-align: center;
+      
+      img {
         margin: 0 auto;
-        padding-bottom: 20px;
-        text-indent: 50px;
+        height: 400px;
+      }
+    }
 
-		}
-	}
+    p {
+      
+      a {
+        color: $purple;
+        text-decoration: none;
+        font-style: italic;
+        border-bottom: 2px solid $orange;
+      }
+
+      a:hover {
+        color: $seafoam;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 660px) {
+ 
+  .css-zen {
+    padding: 50px 20px 20px 20px;
+
+    h1 {
+      font-size: 35px;
+      clear: both;
+    }
+
+    p {
+      font-size: 16px;
+    }
+    
+    .css-zen-about {
+      width: 100%;
+      max-width: 660px;
+      
+      .parent-container1:first-of-type {
+        padding-right: 2%;
+        float: left;
+        margin-bottom: 0;
+      }
+
+      .parent-container1:last-of-type {
+        padding-left: .55%;
+        float: left;
+        margin-bottom: 0;
+      }
+
+      .middle {
+        float: left;
+        width: 60.5%;
+
+        p {
+          clear: none;
+        
+          &:first-of-type {
+            padding-top: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 862px) {
+
+  .css-zen {
+    padding-top: 160px;
+    max-width: 850px;
+
+    h1 {
+      font-size: 45px;
+    }
+
+    h2 {
+      font-size: 22px;
+    }
+
+    h3 {
+      font-size: 35px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .css-zen-about {
+      padding-top: 10px;
+      max-width: 800px;
+
+      p {
+        font-size: 17px;
+      }
+
+      .middle {
+        width: 65%;
+      }
+
+      .parent-container1 {
+
+        img {
+          height: 450px;
+        }
+
+        &:last-of-type {
+
+          img {
+            height: 450px;
+          }
+        }
+      }
+    }
+  }
 }

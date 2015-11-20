@@ -118,7 +118,7 @@ header {
 	max-width: 515px;
 	padding: 10px 1%;
 	margin: 0 auto;
-	width: 98%;
+	width: 100%;
 	box-sizing: border-box;
 	overflow: hidden;
 
@@ -148,23 +148,17 @@ header {
 	}
 
 	.backyard-art, .kindness-project, .css-zen-garden, .goodreads {
-		
-		.container {
-			border-bottom: 2px solid $orange;
-			box-sizing: border-box;
-			overflow: hidden;
-			padding: 60px 0 60px 0;
+		border-bottom: 2px solid $orange;
+		box-sizing: border-box;
+		overflow: hidden;
+		padding: 60px 0 60px 0;
 
-			.image-wrapper {
-				width: 50%;
-			}
+		.image-wrapper {
+			border: 3px solid $purple;
+			width: 50%;
 		}
 
-		.container a:hover {
-
-			h1, h2 {
-				box-shadow: inset 0 -3px 0 $orange;
-			}
+		a:hover {
 
 			.image-wrapper {
 				border: 3px solid $orange;
@@ -173,13 +167,10 @@ header {
 	}
 
 	.backyard-art {
-
-		.container {
-			padding-top: 40px;
-		}
-
+		padding-top: 40px;
+		
 		.image-wrapper {
-			border: 3px solid $purple;
+			// border: 3px solid $purple;
 			float: left;
 			margin-right: 2%;
 
@@ -201,7 +192,7 @@ header {
 		}
 
 		.image-wrapper {
-			border: 3px solid $purple;
+			// border: 3px solid $purple;
 			float: right;
 			margin-left: 2%;
 
@@ -218,7 +209,7 @@ header {
 		clear: right;
 
 		.image-wrapper {
-			border: 3px solid $purple;
+			// border: 3px solid $purple;
 			float: left;
 			margin-right: 2%;
 			
@@ -233,17 +224,14 @@ header {
 
 	.goodreads {
 		clear: left;
-
-		.container {
-			border-bottom: none;
-		}
-
+		border-bottom: none;
+	
 		h1, h2 {
 			text-align: right;
 		}
 
 		.image-wrapper {
-			border: 3px solid $purple;
+			// border: 3px solid $purple;
 			float: right;
 			margin-left: 2%;
 			
@@ -308,6 +296,9 @@ header {
 
 	.contact {
 		padding-bottom: 100px;
+		max-width: 430px;
+		margin: 0 auto;
+
 
 		.email, .github, .instagram, .dribbble, .twitter {
 			float: left;
@@ -406,70 +397,143 @@ footer {
 	}
 
 	.work {
-		padding: 150px 20px;
+		// padding-top: 150px;
+		// padding: 0px 20px;
 		margin: 0 auto;
 		width: 100%;
 		box-sizing: border-box;
+		max-width: 1000px;
 
 		.backyard-art, .kindness-project, .css-zen-garden, .goodreads {
-			@include medium-screen;
-		}
+			border-bottom: none;
+			padding: 25px 0 20px 0;
+			width: 50%;
+			margin: 0 auto;
 
-		.backyard-art, .css-zen-garden {
-			clear: none;
-
-			.container a:hover .image-wrapper {
-				border: 4px solid $purple;
+			.image-wrapper {
+				width: 95%;
+				border: 5px solid $purple;
+				margin-bottom: 20px;
 			}
 
-			.container {
-				float: left;
-				padding-bottom: 20px;
+			a:hover {
 
 				.image-wrapper {
-					float: left;
-				}
-
-				h1, h2 {
-					margin: 0 auto;
-					width: 100%;
-					text-align: center;
-					clear: both;
-					float: left;
-					padding-right: 0;
+					border: 5px solid $orange;
 				}
 			}
 		}
 
-		.kindness-project, .goodreads {
-			clear: none;
+		.backyard-art {
+			padding-right: 2.5%;
+			float: left;
+			padding-left: 5%;
+			padding: right;
 
-			.container a:hover .image-wrapper {
-				border: 4px solid $purple;
-			}
-	
-			.container {
-				float: right;
 
-				.image-wrapper {
-					float: right;
-				}
-			}
-			
 			h1, h2 {
-				margin: 0 auto;
-				width: 100%;
-				text-align: center;
-				clear: both;
-				float: right;
+				clear: left;
 			}
+
+			.image-wrapper {
+
+			}
+
 		}
 
-		.high-trek .container {
+		.kindness-project {
+			padding-right: 5%;
+			clear: none;
+			float: left;
+			padding-left: 2.5%;
 
-			padding-bottom: 80px;
+			h1, h2 {
+				clear: right;
+				text-align: left;
+			}
+
 		}
-	}
+
+		.css-zen-garden {
+			padding-right: 2.5%;
+			padding-left: 5%;
+			clear: left;
+			float: left;
+			h1, h2 {
+				clear: left;
+			}
+
+		}
+
+		.goodreads {
+			padding-left: 2.5%;
+			padding-right: 5%;
+			float: left;
+			clear: none;
+
+			h1, h2 {
+				clear: right;
+				text-align: left;
+			}
+
+		}
+
+	// 	.backyard-art, .css-zen-garden {
+	// 		clear: none;
+
+	// 		.container a:hover .image-wrapper {
+	// 			border: 4px solid $purple;
+	// 		}
+
+	// 		.container {
+	// 			float: left;
+	// 			padding-bottom: 20px;
+
+	// 			.image-wrapper {
+	// 				float: left;
+	// 			}
+
+	// 			h1, h2 {
+	// 				margin: 0 auto;
+	// 				width: 100%;
+	// 				text-align: center;
+	// 				clear: both;
+	// 				float: left;
+	// 				padding-right: 0;
+	// 			}
+	// 		}
+	// 	}
+
+	// 	.kindness-project, .goodreads {
+	// 		clear: none;
+
+	// 		.container a:hover .image-wrapper {
+	// 			border: 4px solid $purple;
+	// 		}
+	
+	// 		.container {
+	// 			float: right;
+
+	// 			.image-wrapper {
+	// 				float: right;
+	// 			}
+	// 		}
+			
+	// 		h1, h2 {
+	// 			margin: 0 auto;
+	// 			width: 100%;
+	// 			text-align: center;
+	// 			clear: both;
+	// 			float: right;
+	// 		}
+	// 	}
+
+	// 	.high-trek .container {
+
+	// 		padding-bottom: 80px;
+	// 	}
+	// }
+}
 	.info {
 		margin-top: 40px;
 		clear: both;

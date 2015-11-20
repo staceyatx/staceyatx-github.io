@@ -116,7 +116,7 @@ header {
 
 .work {
 	max-width: 515px;
-	padding: 30px 1%;
+	padding: 10px 1%;
 	margin: 0 auto;
 	width: 98%;
 	box-sizing: border-box;
@@ -173,6 +173,10 @@ header {
 	}
 
 	.backyard-art {
+
+		.container {
+			padding-top: 40px;
+		}
 
 		.image-wrapper {
 			border: 3px solid $purple;

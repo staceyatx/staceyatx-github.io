@@ -1,292 +1,315 @@
-
-
 .kindness {
-  max-width: 480px;
-  padding: 50px 10px 20px 10px;
-  margin: 0 auto;
-
-  h1 {
-    font-family: $header-font;
-    font-size: 34px;
-    color: $seafoam;
-    padding-bottom: 10px;
-  }
-
-  h2 {
-    padding-bottom: 30px;
-  }
-
-  h3 {
-    font-size: 32px;
-    padding: 50px 0 25px 0;
-  }
-
-  p {
-    font-family: $paragraph-font;
-    color: $purple;
-    font-size: 16px;
-    line-height: 160%;
-    margin: 0 auto;
-    padding-bottom: 10px;
-    // text-indent: 20px;
-  }
-
-  .kindness-about{
+    max-width: 480px;
+    padding: 50px 10px 20px 10px;
     margin: 0 auto;
 
-      .parent-container1 {
-        margin: 0 auto;
-        width: 170px;
-        margin-bottom: 20px;
-        margin-top: 5px;
-      
-        img {
-          margin: 0 auto;
-          height: 350px;
-        }
-      }
-
-    p {
-      clear: left;
-    }
-  }
-
-  .kindness-research {
-
-    p:first-of-type {
-      padding-top: 10px;
+    h1 {
+        font-family: $header-font;
+        font-size: 34px;
+        color: $seafoam;
+        padding-bottom: 10px;
     }
 
-    .parent-container2 {
-      margin: 0 auto;
-      text-align: center;
-      padding: 10px 0;
-      
-      img {
-        height: 138px;
-        max-width: 100%;
-        text-align: center;
-      }
-    }
-  }
-
-  .kindness-design {
-    margin: 0 auto;
-
-    p {
-      clear: both;
+    h2 {
+        padding-bottom: 30px;
     }
 
-    p:first-of-type {
-      padding-top: 10px;
-    }
-
-    .parent-container {
-      padding: 10px 0;
-      margin: 0 auto;
-      text-align: center;
-
-      img {
-        height: 81.4px;
-        max-width: 100%;
-        text-align: center;
-      }
-    }
-
-    .parent-container3 {
-      margin: 0 auto;
-      text-align: center;
-      padding: 10px 0;
-
-      img {
-
-        height: 120px;
-        max-width: 100%;
-        text-align: center;
-      }
-    }
-  }
-  .kindness-challenges {
     h3 {
-      padding-top: 60px;
+        font-size: 32px;
+        padding: 50px 0 25px 0;
     }
-  }
-  .kindness-prototype {
-    iframe {
-      display: none;
-    }
-  }
 
-  .kindness-more {
-    padding-bottom: 40px;
+    p {
+        font-family: $paragraph-font;
+        color: $purple;
+        font-size: 16px;
+        line-height: 160%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        // text-indent: 20px;
+    }
+
+    .kindness-about{
+        margin: 0 auto;
+        padding-top: 20px;
+
+        p:first-of-type {
+             padding-top: 10px;
+            }
+
+        .parent-container1 {
+            margin: 0 auto;
+            width: 170px;
+            margin-bottom: 20px;
+            margin-top: 5px;
+      
+            img {
+                margin: 0 auto;
+                height: 350px;
+            }
+        }
+
+        p {
+            clear: left;
+        }
+    }
+
+    .kindness-research {
+
+        p:first-of-type {
+            padding-top: 10px;
+        }
+
+        .parent-container2 {
+            margin: 0 auto;
+            text-align: center;
+            padding: 10px 0;
+      
+            img {
+                height: 138px;
+                max-width: 100%;
+                text-align: center;
+            }
+        }
+    }
+
+    .kindness-design {
+        margin: 0 auto;
+
+        p {
+            clear: both;
+
+            &:first-of-type {
+                padding-top: 10px;
+            }
+        }
+
+        .parent-container {
+          padding: 10px 0;
+          margin: 0 auto;
+          text-align: center;
+
+            img {
+                height: 81.4px;
+                max-width: 100%;
+                text-align: center;
+            }
+        }
+
+        .parent-container3 {
+            margin: 0 auto;
+            text-align: center;
+            padding: 10px 0;
+
+            img {
+
+                height: 120px;
+                max-width: 100%;
+                text-align: center;
+            }
+        }
+    }
+
+    .kindness-challenges {
+    
+        h3 {
+            padding-top: 60px;
+        }
+    }
+
+    .kindness-prototype {
+        
+        iframe {
+            display: none;
+        }
+    }
+
+    .kindness-more {
+        padding-bottom: 40px;
 
     h3 {
       // padding: 50px 0 30px 0;
     }
 
     a {
-      font-family: $paragraph-font;
-      font-style: italic;
-      font-size: 18px;
-      text-decoration: none;
-      color: $purple;
-      margin: 20px 5% 0 0;
-      border-bottom: 2px solid $orange;
-      line-height: 40px;
-      font-weight: 500;
-      // -webkit-font-smoothing: antialiased;
+        font-family: $paragraph-font;
+        font-style: italic;
+        font-size: 18px;
+        text-decoration: none;
+        color: $purple;
+        margin: 20px 5% 0 0;
+        // border-bottom: 2px solid $orange;
+        line-height: 40px;
+        font-weight: 500;
+        box-shadow: inset 0 -3px 0 $orange;
+        // -webkit-font-smoothing: antialiased;
 
     }
 
-    a:hover {
-      border-bottom: 2px solid $orange;
-      color: $seafoam;
+        a:hover {
+            border-bottom: 2px solid $orange;
+            color: $seafoam;
+        }
     }
-  }
 }
 
 @media screen and (min-width: 660px) {
  
-  .kindness {
-    max-width: 580px;
-    padding: 50px 20px 20px 20px;
+    .kindness {
+        max-width: 580px;
+        padding: 50px 20px 20px 20px;
 
-    h1 {
-      font-size: 36px;
-      clear: both;
-    }
+        h1 {
+            font-size: 36px;
+            clear: both;
+        }
 
-    h3 {
-      font-size: 34px;
-    }
-    p {
-      font-size: 17px;
-    }
+        h3 {
+            font-size: 34px;
+        }
+
+        p {
+            font-size: 17px;
+        }
     
-    .kindness-about {
-      // width: 90%;
-      // max-width: 630px;
-      
-      .parent-container1 {
-        padding-right: 20px;
-        float: left;
-        margin-bottom: 0;
-      }
+        .kindness-about {
+          
+            .parent-container1 {
+                padding-right: 20px;
+                float: left;
+                margin-bottom: 0;
+            }
 
-      p {
-        padding-left: 3%;
-        clear: none;
-        padding-top: 10px;
-        font-size: 17px;
-      
-        // &:first-of-type {
-        //   padding-top: 30px;
-        // }
-      }
-    }
-
-    .kindness-research {
-      clear: both;
-
-      .parent-container2 {
-        padding: 15px 0;
-        
-        img {
-          height: 230px;
+            p {
+                padding-left: 3%;
+                clear: none;
+            // padding-top: 10px;
+                font-size: 17px;
+            }
         }
-      }
-    }
 
-    .kindness-design {
+        .kindness-research {
+            clear: both;
 
-      .parent-container {
-        padding: 15px 0;
-        
-        img {
-          height: 150px;
+            .parent-container2 {
+                padding: 15px 0;
+            
+                img {
+                    height: 260px;
+                }
+            }
         }
-      }
 
-      .parent-container3 {
-        padding: 15px 0;
-        
-        img {
-          height: 200px;
+        .kindness-design {
+
+            .parent-container {
+                padding: 15px 0;
+            
+                img {
+                height: 150px;
+                }
+            }
+
+            .parent-container3 {
+                padding: 15px 0;
+            
+                img {
+                 height: 230px;
+                }
+            }
         }
-      }
-    }
 
-    .kindness-challenges, .kindness-prototype {
+        .kindness-challenges, .kindness-prototype {
 
-      h3 {
-        padding-bottom: 40px;
-      }
+            h3 {
+                padding-bottom: 40px;
+            }
+        }
     }
-  }
 }
 
 @media screen and (min-width: 862px) {
 
   #portfolio-pages {
-    position: absolute;
-  }
+        position: absolute;
+     }
 
-  .kindness {
-    padding-top: 160px;
-    max-width: 650px;
+    .kindness {
+        padding-top: 160px;
+        max-width: 650px;
 
-    h1 {
-      font-size: 42px;
-    }
-
-    h2 {
-      font-size: 22px;
-    }
-
-    h3 {
-      font-size: 38px;
-      // padding-bottom: 40px;
-    }
-
-    p {
-      font-size: 17px;
-    }
-
-    .kindness-about {
-      padding-top: 20px;
-      max-width: 630px;
-      padding-bottom: 10px;
-
-      p {
-        font-size: 17px;
-      }
-
-      .parent-container1 {
-        padding-right: 50px;
-      }
-    }
-
-    .kindness-design {
-
-      .parent-container, .parent-container3 {
-        
-        img {
-          height: 170px;
+        h1 {
+          font-size: 45px;
         }
-      }
-    }
 
-    .kindness-prototype {
-      height: 600px;
+        h2 {
+          font-size: 22px;
+        }
 
-      p {
-        margin-top: -850px;
-        float: right;
-        width: 60%;
-      }
-      iframe {
-        display: inline-block;
-      }
+        h3 {
+          font-size: 38px;
+        }
+
+        p {
+          font-size: 17px;
+        }
+
+        .kindness-about {
+            padding-top: 20px;
+            max-width: 630px;
+            padding-bottom: 10px;
+
+            p {
+                font-size: 17px;
+            }
+
+            .parent-container1 {
+                padding-right: 50px;
+            }
+        }
+
+        .kindness-research {
+
+            .parent-container2 {
+                padding: 20px 0;
+
+                img {
+                    height: 280px;
+                }
+            }
+        }
+
+        .kindness-design {
+
+            .parent-container {
+                padding: 20px 0;
+            
+                img {
+                    height: 170px;
+                }
+            }
+
+            .parent-container3 {
+                padding: 20px 0;
+            
+                img {
+                    height: 270px;
+                }
+            }
+        }
+
+        .kindness-prototype {
+            height: 600px;
+
+            p {
+                margin-top: -850px;
+                float: right;
+                width: 60%;
+            }
+
+            iframe {
+                display: inline-block;
+            }
+        }
     }
-  }
 }

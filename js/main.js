@@ -29,6 +29,12 @@ $('.parent-container4').magnificPopup({
   // other options
 });
 
+$('.research-container').magnificPopup({
+  delegate: 'a', // child items selector, by clicking on it popup will open
+  type: 'image'
+  // other options
+});
+
 $('.gallery-item').magnificPopup({
   type: 'image',
   gallery:{

@@ -90,7 +90,7 @@ header {
 			a {
 				vertical-align: center;
 				font-family: $header-font;
-				font-size: 19px;
+				font-size: 18px;
 				text-transform: uppercase;
 				// padding: 20px 0;
 				text-decoration: none;
@@ -148,7 +148,7 @@ header {
 	.backyard-art, .kindness-project, .css-zen-garden, .goodreads {
 		
 		.container {
-			border-bottom: 1px dotted $dusty-seafoam;
+			border-bottom: 2px solid $orange;
 			box-sizing: border-box;
 			overflow: hidden;
 			padding: 40px 0 40px 0;

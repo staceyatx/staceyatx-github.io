@@ -250,64 +250,22 @@ header {
 			}
 		}
 	}
-
-	// .backyard-art, .css-zen-garden {
-	// 	clear: right;
-
-	// 	.container {
-	// 		border-bottom: 1px dotted $dusty-seafoam;
-	// 		box-sizing: border-box;
-	// 		overflow: hidden;
-	// 		padding: 20px 0 20px 0;
-
-	// 		.image-wrapper {
-	// 			border: 4px solid $purple;
-	// 			float: left;
-	// 			margin-right: 2%;
-	// 		}
-
-	// 		// h1, h2 {
-	// 		// 	text-align: left;
-	// 		// 	padding-right: 50px;
-	// 		// }
-	// 	}
-	// }
-
-	// .kindness-project, .goodreads {
-	// 	clear: left;
-
-	// 	.container {
-	// 		border-bottom: 1px dotted $dusty-seafoam;
-	// 		box-sizing: border-box;
-	// 		overflow: hidden;
-	// 		padding: 20px 0 20px 0;
-
-	// 		.image-wrapper {
-	// 			border: 4px solid $purple;
-	// 			float: right;
-	// 			margin-left: 2%;
-	// 		}
-
-	// 		h1, h2 {
-	// 			text-align: right;
-	// 		}
-	// 	}
-	// }
 }
 
 .info {
 	clear: both;
-	width: 98%;
+	width: 100%;
 	background-color: $purple;
 	border-top: 4px solid $light-purple;
 	padding: 1%;
+	overflow: hidden;
 
 	.about-me {
 		h1 {
 			font-family: $header-font;
 			color: $seafoam;
 			font-size: 32px;
-			padding: 20px 10px 15px 10px;
+			padding: 30px 10px 30px 10px;
 			// letter-spacing: -2.5px;
 		}
 
@@ -340,37 +298,19 @@ header {
 		}
 	}
 
-	.social-media {
-		h1 {
-			font-size: 28px;
-			color: $seafoam;
-		}
-
-		.facebook, .instagram, .twitter {
-			float: left;
-			path {
-				fill: $orange;
-			}
-		}
-
-		.instagram path {
-			fill: $orange;
-		}
-
-		// .twitter {
-		// 	float: left;
-		// }
-	}
-
 	.contact {
-		@include contact-form;
-		padding-left: 20px;
+		padding-bottom: 100px;
 
-		h1 {
-			font-family: $header-font;
-			color: $seafoam;
-			font-size: 28px;
-			padding: 20px 10px 20px 40px;
+		.email, .github, .instagram, .dribbble, .twitter {
+			float: left;
+			width: 18%;
+			margin-right: 2%;
+
+			img {
+
+				width: 100%;
+				padding-bottom: 100%;
+			}	
 		}
 	}
 }
@@ -393,17 +333,6 @@ footer {
 		text-align: center;
 		margin: 0 auto 0 auto;
 		margin-top: -15px; 
-		
-		// img {
-		// 	// border-radius: 50%;
-		// 	height: 100%;
-		// 	width: 100%;
-		// 	// background-color: #f3eade;
-		// 	// border: 3px solid #90C5A9;
-		// 	// padding: 5px 6px;
-		// 	margin: 0 auto;
-		// 	box-sizing: border-box;
-		// }
 	}
 }
 

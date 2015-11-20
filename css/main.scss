@@ -115,87 +115,180 @@ header {
 }
 
 .work {
+	max-width: 515px;
 	padding: 50px 1%;
 	margin: 0 auto;
 	width: 98%;
 
 	h1 {
-		// -webkit-font-smoothing: antialiased;
+		font-family: $header-font;
+		font-size: 32px;
+		text-transform: uppercase;
+		color: $seafoam;
+		// padding-top: 20px;
+		margin-bottom: 10px;
+		-webkit-font-smoothing: antialiased;
+		line-height: 40px;
+	}
+			// letter-spacing: -3px;
+		
+
+	h2 {
+		font-family: $paragraph-font;
+		font-size: 18px;
+		color: $purple;
+		font-style: italic;
+		line-height: 20px;
+	}
+
+	a {
+		text-decoration: none;
 	}
 
 	.backyard-art, .kindness-project, .css-zen-garden, .goodreads {
-		@include small-screen;
+		
+		.container {
+			border-bottom: 1px dotted $dusty-seafoam;
+			box-sizing: border-box;
+			overflow: hidden;
+			padding: 40px 0 40px 0;
 
-		.container a:hover .image-wrapper {
-			border: 4px solid $purple;
+			.image-wrapper {
+				width: 40%;
+			}
 		}
 
-		.container a:hover img {
-			-webkit-filter: grayscale(0%);
+		.container a:hover {
+
+			h1, h2 {
+				box-shadow: inset 0 -3px 0 $orange;
+			}
+
+			.image-wrapper {
+				border: 4px solid $orange;
+			}
 		}
 	}
 
 	.backyard-art {
-		.image {
-			background: url(../images/backyard.jpg) 0 0 no-repeat;
-			background-size: cover;
-			width: 100%;
-			padding-bottom: 100%;
+
+		.image-wrapper {
+			border: 4px solid $purple;
+			float: left;
+			margin-right: 2%;
+
+			
+			.image {
+				background: url(../images/backyard-art.jpg) 0 0 no-repeat;
+				background-size: cover;
+				width: 100%;
+				padding-bottom: 100%;
+			}
 		}
 	}
 
 	.kindness-project {
-		.image {
-			background: url(../images/kindness.png) 0 0 no-repeat;
-			background-size: cover;
-			width: 100%;
-			padding-bottom: 100%;
-		}
-	}
-
-	.css-zen-garden {
-		.image {
-			background: url(../images/csszen.png) 0 0 no-repeat;
-			background-size: cover;
-			width: 100%;
-			padding-bottom: 100%;
-		}
-	}
-
-	.goodreads {
-		.image {
-			background: url(../images/goodreads2.png) 0 0 no-repeat;
-			background-size: cover;
-			width: 100%;
-			padding-bottom: 100%;
-		}
-	}
-
-	.backyard-art, .css-zen-garden {
-
-		.container {
-
-			.image-wrapper {
-				float: left;
-			}
-
-			h1, h2 {
-				text-align: left;
-				padding-right: 50px;
-			}
-		}
-	}
-
-	.kindness-project, .goodreads {
-
-		.image-wrapper {
-			float: right;
-		}
+		clear: left;
 
 		h1, h2 {
 			text-align: right;
 		}
+
+		.image-wrapper {
+			border: 4px solid $purple;
+			float: right;
+			margin-left: 2%;
+
+			.image {
+				background: url(../images/kindness.png) 0 0 no-repeat;
+				background-size: cover;
+				width: 100%;
+				padding-bottom: 100%;
+			}
+		}
 	}
+
+	.css-zen-garden {
+		clear: right;
+
+		.image-wrapper {
+			border: 4px solid $purple;
+			float: left;
+			margin-right: 2%;
+			
+			.image {
+				background: url(../images/csszen.png) 0 0 no-repeat;
+				background-size: cover;
+				width: 100%;
+				padding-bottom: 100%;
+			}
+		}
+	}
+
+	.goodreads {
+		clear: left;
+
+		h1, h2 {
+			text-align: right;
+		}
+
+		.image-wrapper {
+			border: 4px solid $purple;
+			float: right;
+			margin-left: 2%;
+			
+
+			.image {
+				background: url(../images/goodreads2.png) 0 0 no-repeat;
+				background-size: cover;
+				width: 100%;
+				padding-bottom: 100%;
+			}
+		}
+	}
+
+	// .backyard-art, .css-zen-garden {
+	// 	clear: right;
+
+	// 	.container {
+	// 		border-bottom: 1px dotted $dusty-seafoam;
+	// 		box-sizing: border-box;
+	// 		overflow: hidden;
+	// 		padding: 20px 0 20px 0;
+
+	// 		.image-wrapper {
+	// 			border: 4px solid $purple;
+	// 			float: left;
+	// 			margin-right: 2%;
+	// 		}
+
+	// 		// h1, h2 {
+	// 		// 	text-align: left;
+	// 		// 	padding-right: 50px;
+	// 		// }
+	// 	}
+	// }
+
+	// .kindness-project, .goodreads {
+	// 	clear: left;
+
+	// 	.container {
+	// 		border-bottom: 1px dotted $dusty-seafoam;
+	// 		box-sizing: border-box;
+	// 		overflow: hidden;
+	// 		padding: 20px 0 20px 0;
+
+	// 		.image-wrapper {
+	// 			border: 4px solid $purple;
+	// 			float: right;
+	// 			margin-left: 2%;
+	// 		}
+
+	// 		h1, h2 {
+	// 			text-align: right;
+	// 		}
+	// 	}
+	// }
 }
 
 .info {
@@ -224,6 +317,22 @@ header {
 		}
 		p:last-child {
 			padding-bottom: 20px;
+		}
+
+		.image-wrapper {
+			width: 90%;
+		    margin: 0 auto;
+		    text-align: center;
+		    max-width: 370px;
+
+
+			.profile-pic {
+				background: url(../images/pic2.jpg) 0 0 no-repeat;
+				background-size: cover;
+				width: 70%;
+				padding-bottom: 70%;
+				margin: 0 auto;
+			}
 		}
 	}
 

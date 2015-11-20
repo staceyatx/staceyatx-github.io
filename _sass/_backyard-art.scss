@@ -1,12 +1,14 @@
 .backyard {
+  max-width: 540px;
   padding: 50px 10px 20px 10px;
   margin: 0 auto;
 
   h1 {
     font-family: $header-font;
-    font-size: 32px;
+    font-size: 36px;
     color: $seafoam;
     padding-bottom: 10px;
+
   }
 
   h2 {
@@ -14,23 +16,27 @@
   }
 
   h3 {
+      font-size: 32px;
       padding: 40px 0 25px 0;
     }
 
   p {
     font-family: $paragraph-font;
     color: $purple;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 160%;
     margin: 0 auto;
     padding-bottom: 10px;
-    text-indent: 20px;
+    // text-indent: 20px;
 
     a {
         color: $purple;
         text-decoration: none;
         font-style: italic;
         border-bottom: 2px solid $orange;
+        font-weight: 500;
+    webkit-font-smoothing: antialiased;
+
       }
 
       a:hover {
@@ -75,6 +81,7 @@
     .parent-container2 {
       margin: 0 auto;
       text-align: center;
+      padding: 10px 0;
       
       img {
         height: 128px;
@@ -101,6 +108,7 @@
     }
 
     .parent-container{
+      padding: 15px 0;
       margin: 0 auto;
       text-align: center;
 
@@ -112,7 +120,7 @@
     }
 
     .parent-container3 {
-      margin: 0 auto;
+      margin: 20px auto;
       text-align: center;
       padding: 5px 0;
 
@@ -137,6 +145,7 @@
     }
 
     .parent-container4 {
+      padding: 15px 0;
       margin: 0 auto;
       text-align: center;
 
@@ -163,6 +172,7 @@
       color: $purple;
       margin: 20px 5% 0 0;
       border-bottom: 2px solid $orange;
+      font-weight: 500;
     }
 
     a:hover {

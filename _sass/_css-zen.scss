@@ -1,10 +1,11 @@
 .css-zen {
+  max-width: 540px;
   padding: 50px 10px 20px 10px;
   margin: 0 auto;
 
   h1 {
     font-family: $header-font;
-    font-size: 32px;
+    font-size: 36px;
     color: $seafoam;
     padding-bottom: 10px;
   }
@@ -14,17 +15,30 @@
   }
 
   h3 {
-      padding: 40px 0 25px 0;
+    font-size: 32px;
+      padding: 50px 0 25px 0;
     }
 
   p {
     font-family: $paragraph-font;
     color: $purple;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 160%;
     margin: 0 auto;
     padding-bottom: 10px;
-    text-indent: 20px;
+    // text-indent: 20px;
+
+    a {
+        color: $purple;
+        text-decoration: none;
+        font-style: italic;
+        border-bottom: 2px solid $orange;
+        font-weight: 500;
+      }
+
+      a:hover {
+        color: $seafoam;
+      }
   }
 
   .css-zen-about{
@@ -41,20 +55,65 @@
         margin: 0 auto;
         height: 400px;
       }
+    &:last-of-type {
+
+      img {
+        height: 300px;
+      }
+    }
+
     }
 
     p {
       
-      a {
-        color: $purple;
-        text-decoration: none;
-        font-style: italic;
-        border-bottom: 2px solid $orange;
-      }
 
-      a:hover {
-        color: $seafoam;
+    }
+  }
+
+  .css-zen-research {
+    margin: 0 auto;
+  }
+
+  .css-zen-design {
+
+     p:first-of-type {
+      padding-top: 10px;
+    }
+
+    .parent-container2 {
+      margin: 0 auto;
+      text-align: center;
+      
+      img {
+        height: 91.7px;
+        max-width: 100%;
       }
+    }
+  }
+  .css-zen-more {
+    padding-bottom: 40px;
+
+    h3 {
+      padding: 40px 0 20px 0;
+    }
+
+    a {
+      font-family: $paragraph-font;
+      font-style: italic;
+      font-size: 18px;
+      text-decoration: none;
+      color: $purple;
+      margin: 20px 5% 0 0;
+      border-bottom: 2px solid $orange;
+      line-height: 25px;
+      font-weight: 500;
+      // -webkit-font-smoothing: antialiased;
+
+    }
+
+    a:hover {
+      border-bottom: 2px solid $orange;
+      color: $seafoam;
     }
   }
 }
@@ -97,7 +156,7 @@
           clear: none;
         
           &:first-of-type {
-            padding-top: 30px;
+            // padding-top: 30px;
           }
         }
       }

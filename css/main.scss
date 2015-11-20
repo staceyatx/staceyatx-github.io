@@ -14,10 +14,14 @@
 body {
 	background-color: $cream;
 	width: 100%;
+	// -webkit-font-smoothing: antialiased;
 }
 	h1 {
 		font-family: $header-font;
 		text-transform: uppercase;
+		// letter-spacing: -2.5px;
+		font-weight: 700;
+		
 	}
 
 	h2 {
@@ -25,6 +29,8 @@ body {
 		font-size: 20px;
 		color: $purple;
 		font-style: italic;
+		// font-weight: 400;
+		// -webkit-font-smoothing: antialiased;
 	}
 
 	h3 {
@@ -32,11 +38,15 @@ body {
 		text-transform: uppercase;
 		color: $orange;
 		font-size: 28px;
+		// letter-spacing: -2.5px;
+		font-weight: 700;
+
 	}
 
 	p {
 		font-family: $paragraph-font;
 		color: $purple;
+		// -webkit-font-smoothing: antialiased;
 	}
 
 header {
@@ -79,12 +89,14 @@ header {
 			a {
 				vertical-align: center;
 				font-family: $header-font;
-				font-size: 16px;
+				font-size: 19px;
 				text-transform: uppercase;
 				// padding: 20px 0;
 				text-decoration: none;
 				color: $cream;
 				margin: 5px;
+				// letter-spacing: -2px;
+				font-weight: 700;
 			}
 
 			a:last-child {
@@ -191,8 +203,9 @@ header {
 		h1 {
 			font-family: $header-font;
 			color: $seafoam;
-			font-size: 28px;
+			font-size: 32px;
 			padding: 20px 10px 15px 10px;
+			// letter-spacing: -2.5px;
 		}
 
 		p {
@@ -296,7 +309,7 @@ footer {
 				h1 {
 					text-align: left;
 					padding: 16px 25px 10px 15px;
-					font-size: 28px;
+					font-size: 32px;
 					text-transform: uppercase;
 					color: $seafoam;
 				}
@@ -326,7 +339,7 @@ footer {
 				// padding-left: 20px;
 
 				a {
-					font-size: 20px;
+					font-size: 22px;
 				}
 
 				a:last-child {
@@ -417,7 +430,7 @@ footer {
 		}
 	}
 }
-@media screen and (min-width: 862px) {
+@media screen and (min-width: 930px) {
 
 	header {
 		z-index: 99;
@@ -433,7 +446,7 @@ footer {
 				
 				h1 {
 					float: left;
-					font-size: 30px;
+					font-size: 35px;
 					// padding-right: 50px;
 					padding-top: 25px;
 				}
@@ -442,7 +455,7 @@ footer {
 					float: left;
 					text-align: left;
 					display: block;
-					font-size: 25px;
+					font-size: 24px;
 					// color: $cream;
 					text-transform: uppercase;
 					padding-top: 28px;
@@ -456,19 +469,19 @@ footer {
 				margin-top: -30px;
 
 				.logo-image {
-					height: 180px;
-					width: 180px;
+					height: 175px;
+					width: 175px;
 				}
 			}
 
 			nav {
 				float: right;
-				padding-top: 26px;
-				font-size: 10px;
+				padding-top: 28px;
+				// font-size: 10px;
 				// margin-left: 15px;
 
 				a {
-					font-size: 25px;
+					font-size: 24px;
 					margin: 10px 0 10px 15px;
 				}
 			}
@@ -544,27 +557,7 @@ footer {
 
 	footer {
 		
-		height: 45px;
-
-		// .image-wrapper {
-		// 	width: 100%;
-		// 	// max-width: 1000px;
-		// 	// width: 78px;
-		// 	margin: 0 auto;
-		// 	margin-top: -43px; 
-		// 	padding-right: 25px;
-			
-		// 	img {
-		// 		border-radius: 50%;
-		// 		height: 95px;
-		// 		width: 95px;
-		// 		background-color: #f3eade;
-		// 		border: 3px solid #90C5A9;
-		// 		padding: 5px 6px;
-		// 		margin: 0 auto;
-		// 		box-sizing: border-box;
-		// 	}
-		
+		height: 45px;	
 	}	
 }
 

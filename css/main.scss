@@ -119,6 +119,8 @@ header {
 	padding: 50px 1%;
 	margin: 0 auto;
 	width: 98%;
+	box-sizing: border-box;
+	overflow: hidden;
 
 	h1 {
 		font-family: $header-font;
@@ -265,13 +267,13 @@ header {
 			font-family: $header-font;
 			color: $seafoam;
 			font-size: 32px;
-			padding: 30px 10px 30px 10px;
+			padding: 40px 10px 50px 10px;
 			// letter-spacing: -2.5px;
 		}
 
 		p {
 			font-family: $paragraph-font;
-			font-size: 16px;
+			font-size: 17px;
 			color: $cream;
 			padding: 10px 0px 5px 10px;;
 			line-height: 160%;
@@ -286,6 +288,7 @@ header {
 		    margin: 0 auto;
 		    text-align: center;
 		    max-width: 370px;
+		    padding-bottom: 20px;
 
 
 			.profile-pic {

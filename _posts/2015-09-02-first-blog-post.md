@@ -24,7 +24,7 @@ then that I made a mental checklist for our first day of class the next day:
 By the end of class, the only steps I'd accomplished were steps 1 (_barely_) and 3. I went home during lunch to bawl my eyes
 out and to talk to my brother, who always sets me straight. He told me:
 
->####Set a date and tell yourself "By this date I will have let myself fully feel all the pain and stress I'm going through. After this date I will suck it up, put on my big girl pants and focus on the task at hand".
+>Set a date and tell yourself that by this date I will have let myself fully feel everything I'm going through. After this date I will suck it up, put on my big girl pants and focus on the task at hand.
 
 So I did. I gave myself until the end of the week. To get the ball rolling, I knew I had to actually complete step 5 so
 I messaged my instructor, Abby, and filled her in on my situation. **SO GLAD I DID THAT!** Two hours later when I had finally
@@ -37,7 +37,7 @@ me figure out why my pictures weren't showing up. Considering I'm a night owl, I
 that I wouldn't be able to ask her for help. So I googled and recoded, then googled and recoded, then googled and recoded,
 and recoded some more when **it finally worked!** It was then that I realized:
 
->### Hey, maybe I can do this after all.  
+>Hey, maybe I can do this after all.  
 
 Two weeks in and I can already tell that not only am I much stronger person now than I was when I first started, but
 I with out a doubt made the right decision to pursue UI design and to do so through The Iron Yard. My perfectionism may be

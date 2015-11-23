@@ -31,7 +31,7 @@ body {
 		color: $purple;
 		font-style: italic;
 		font-weight: 500;
-		-webkit-font-smoothing: antialiased;
+		// -webkit-font-smoothing: antialiased;
 	}
 
 	h3 {
@@ -141,6 +141,7 @@ header {
 		font-size: 17px;
 		color: $purple;
 		font-style: italic;
+		-webkit-font-smoothing: antialiased;
 		// line-height: 20px;
 	}
 

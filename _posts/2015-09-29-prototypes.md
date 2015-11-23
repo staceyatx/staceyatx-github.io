@@ -8,7 +8,7 @@ In class today we had our first experience dealing with paper prototypes.
 
 What are prototypes you ask? Well according to _Prototypes - The Beginners Guide_ from [theuxreview.co.uk](http://theuxreview.co.uk/prototypes-the-beginners-guide/) a prototype is:
 
->"...a quasi-realistic representation of what you are building that can be interacted with and tested on users in order to help validate your design."
+>...a quasi-realistic representation of what you are building that can be interacted with and tested on users in order to help validate your design.
 
 Or to put it in a way normal people would understand: it's using paper, household items, etc. to create a makeshift model that resembles what the real version would look like, only simplified, and can physically be messed with by someone in order to see whether or not the real version will actually work before you go wasting a bunch of time creating something that's completely useless. Obviously this is super handy when it comes to web design, considering it takes **SO MUCH TIME** to do all the coding for websites and the whole purpose in having functions and features is for them to work properly and effectively.
 

@@ -1,6 +1,12 @@
-#Mobile App Design
+---
+layout: post
+title:  "Mobil App Design"
+categories: jekyll update
+---
 
-This past weekend we were given the opportunity to design an app of an organization or idea created by one of the design alumni. Not only was it our first experience (at least for me, others may have designed apps before) designing on a mobile app platform, but it was also our first time getting to create with another designer in the class, being that we were put into teams for the assignment. 
+This past weekend we were given the opportunity to design an app of an organization or idea created by one of the design alumni. 
+
+Not only was it our first experience (at least for me, others may have designed apps before) designing on a mobile app platform, but it was also our first time getting to create with another designer in the class, being that we were put into teams for the assignment. 
 
 ##The Idea
 Our alumni, Carissa, came up with the idea of "The Kindness Project", an organization dedicated to improving the world around us and reuniting humanity through daily acts of kindness. She wanted was a social media based platform that was geared around the idea of being able to "challenge" others into performing random acts of kindness.

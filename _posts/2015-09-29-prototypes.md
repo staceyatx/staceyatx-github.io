@@ -1,10 +1,12 @@
 ---
 layout: post
+title:  "Prototypes"
+categories: jekyll update
 ---
 
-# Prototypes
+In class today we had our first experience dealing with paper prototypes. 
 
-In class today we had our first experience dealing with paper prototypes. What are prototypes you ask? Well according to _Prototypes - The Beginners Guide_ from [theuxreview.co.uk](http://theuxreview.co.uk/prototypes-the-beginners-guide/) a prototype is:
+What are prototypes you ask? Well according to _Prototypes - The Beginners Guide_ from [theuxreview.co.uk](http://theuxreview.co.uk/prototypes-the-beginners-guide/) a prototype is:
 
 >"...a quasi-realistic representation of what you are building that can be interacted with and tested on users in order to help validate your design."
 

@@ -3,11 +3,10 @@ layout: post
 title:  "First Post"
 categories: jekyll update
 ---
-# CSS? More Like CSI  
 
-On the night before class began, there was a download party for everyone to download all the programs we'd be using
-and it gave us a chance to start getting to know each other. While going around introducing ourselves and saying how we
-came to be at the Iron Yard, it wasn't even the third person's turn that I had already started doubting myself and was
+On the night before class began, there was a download party for us to start getting to know our class mates.
+
+While going around introducing ourselves and saying how we came to be at the Iron Yard, it wasn't even the third person's turn that I had already started doubting myself and was
 screaming **"what have I gotten myself into?**" in my head. Everyone had at least _some_ experience with coding, where as 
 I had absolutely _none_. On top of that, I had literally just been dumped (the day before) by my boyfriend. I was an 
 emotional wreck and my self-doubt increased dramatically with every passing second. To make matters worse, I was

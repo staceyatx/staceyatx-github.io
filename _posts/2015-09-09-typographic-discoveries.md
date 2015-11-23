@@ -1,10 +1,13 @@
 ---
 layout: post
+title:  "Typographic Discovers"
+categories: jekyll update
 ---
 
-# Typographic Discoveries
 
-For our restaurant website redesign project, we were given our first assignment in choosing typefaces. Being that I
+For our restaurant website redesign project, we were given our first assignment in choosing typefaces. 
+
+Being that I
 have always loved typography and how it was my first step into the art world (friends used to pay me to make signs with
 names/quotes in cool fonts for them to give as gifts), I was really looking forward to the assignment and in all honesty,
 I figured it was going to be a breeze... then we learned about the purpose of font choices in UI Design. **Mind. Blown.**

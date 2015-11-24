@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Mobil App Design"
+title:  "Mobile App Design"
 categories: jekyll update
 ---
 

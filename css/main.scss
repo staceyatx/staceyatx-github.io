@@ -117,7 +117,7 @@ header {
 
 .work {
 	max-width: 515px;
-	padding: 10px 1%;
+	padding: 10px 5%;
 	margin: 0 auto;
 	width: 100%;
 	box-sizing: border-box;
@@ -158,6 +158,11 @@ header {
 		.image-wrapper {
 			border: 3px solid $purple;
 			width: 50%;
+			border-radius: 10px;
+
+			.image {
+				border-radius: 5px;
+			}
 		}
 
 		a:hover {
@@ -253,7 +258,7 @@ header {
 	width: 100%;
 	background-color: $purple;
 	border-top: 4px solid $light-purple;
-	padding: 1%;
+	padding: 2%;
 	overflow: hidden;
 	box-sizing: border-box;
 
@@ -271,20 +276,23 @@ header {
 			font-size: 17px;
 			color: $cream;
 			padding: 10px 0px 5px 10px;;
-			line-height: 160%;
-			width: 90%;
+			line-height: 170%;
+			// width: 90%;
 		}
-		p:last-child {
-			padding-bottom: 20px;
+
+		// p:first-of-type {
+		// 	text-align: center;
+		// }
+		p:last-of-type {
+			padding-bottom: 40px;
 		}
 
 		.image-wrapper {
-			width: 90%;
+			// width: 90%;
 		    margin: 0 auto;
 		    text-align: center;
 		    max-width: 370px;
-		    padding-bottom: 20px;
-
+		    // padding-bottom: 20px;
 
 			.profile-pic {
 				background: url(../images/pic2.jpg) 0 0 no-repeat;
@@ -292,6 +300,12 @@ header {
 				width: 70%;
 				padding-bottom: 70%;
 				margin: 0 auto;
+			}
+
+			p {
+				text-align: center;
+				font-weight: 500;
+				font-size: 19px;
 			}
 		}
 	}
@@ -301,6 +315,9 @@ header {
 		max-width: 430px;
 		margin: 0 auto;
 
+		p {
+			font-size: 17px;
+		}
 
 		.email, .github, .instagram, .dribbble, .twitter {
 			float: left;
@@ -313,6 +330,14 @@ header {
 				padding-bottom: 100%;
 			}	
 		}
+
+		.email {
+			margin-left: 5px;
+		}
+
+		.twitter {
+				margin-right: 0;
+			}
 	}
 }
 
@@ -489,6 +514,10 @@ footer {
 		.about-me {
 			margin: 0 auto;
 			width: 80%;
+
+			h1 {
+				font-size: 40px;
+			}
 		}
 
 		.contact {
@@ -605,94 +634,138 @@ footer {
 
 			a:hover {
 				h1 {
-					top: -100px;
+					float: left;
 					clear: none;
-					font-size: 55px;
-					display: inline;
-					position: absolute;
-					top: 65%;
-					left: 20%;
-					// margin-top: -100%;
+					font-size: 50px;
+					display: inline-block;
+					margin-top: -110px;
+					margin-left: 10px;
 				}
 
 				h2 {
 					color: $orange;
-					top: -100px;
-					clear: none;
+					float: left;
+					// clear: none;
 					font-size: 25px;
 					display: inline-block;
-					position: absolute;
-					top: 75%;
-					left: 20%;
-
+					margin-top: -60px;
+					margin-left: 10px;
+				}
+				
+				.image {
+					background: 
+				    linear-gradient(
+				      rgba(0, 0, 0, 0.5),
+				      rgba(0, 0, 0, 0.5)
+				    ),
+				    url(../images/backyard-art.jpg);
+				    background-size: cover;
 				}
 
-				.image-wrapper {
-					-webkit-filter: grayscale(100%);
-				}
 			}
 		}
 
 		.kindness-project {
 			a:hover {
 				h1 {
-					top: -100px;
+					float: left;
 					clear: none;
-					font-size: 60px;
+					font-size: 50px;
 					display: inline-block;
-					position: absolute;
-					top: 65%;
-					right: 20%;
-					// margin-top: -100%;
+					margin-top: -160px;
+					margin-left: 20px;
 				}
 
 				h2 {
 					color: $orange;
-					top: -100px;
-					clear: none;
+					float: left;
+					// clear: none;
 					font-size: 25px;
 					display: inline-block;
-					position: absolute;
-					top: 75%;
-					right: 20%;
-
+					margin-top: -60px;
+					margin-left: 20px;
+				}
+				
+				.image {
+					background: 
+				    linear-gradient(
+				      rgba(0, 0, 0, 0.5),
+				      rgba(0, 0, 0, 0.5)
+				    ),
+				    url(../images/kindness.png);
+				    background-size: cover;
 				}
 
-				.image-wrapper {
-					-webkit-filter: grayscale(100%);
-				}
 			}
 		}
 
 		.css-zen-garden {
 			a:hover {
 				h1 {
-					top: -100px;
+					float: left;
 					clear: none;
-					font-size: 55px;
+					font-size: 50px;
 					display: inline-block;
-					position: absolute;
-					top: 125%;
-					left: 20%;
-					// margin-top: -100%;
+					margin-top: -110px;
+					margin-left: 10px;
 				}
 
 				h2 {
 					color: $orange;
-					top: -100px;
-					clear: none;
+					float: left;
+					// clear: none;
 					font-size: 25px;
 					display: inline-block;
-					position: absolute;
-					top: 135%;
-					left: 20%;
-
+					margin-top: -60px;
+					margin-left: 10px;
+				}
+				
+				.image {
+					background: 
+				    linear-gradient(
+				      rgba(0, 0, 0, 0.6),
+				      rgba(0, 0, 0, 0.6)
+				    ),
+				    url(../images/csszen.png);
+				    background-size: cover;
 				}
 
-				.image-wrapper {
-					-webkit-filter: grayscale(100%);
-				}
 			}
+		}
+
+		.goodreads {
+			a:hover {
+				h1 {
+					float: left;
+					clear: none;
+					font-size: 50px;
+					display: inline-block;
+					margin-top: -110px;
+					margin-left: 15px;
+				}
+
+				h2 {
+					color: $orange;
+					float: left;
+					// clear: none;
+					font-size: 25px;
+					display: inline-block;
+					margin-top: -60px;
+					margin-left: 15px;
+				}
+				
+				.image {
+					background: 
+				    linear-gradient(
+				      rgba(0, 0, 0, 0.6),
+				      rgba(0, 0, 0, 0.6)
+				    ),
+				    url(../images/goodreads2.png);
+				    background-size: cover;
+				}
+
+			}
+
 		}
 	}
 	
@@ -700,36 +773,50 @@ footer {
 		overflow: hidden;
 
 		.about-me {
-			padding: 35px 20px 0 10px;
-			float: left;
-			width: 40%;
+			// padding: 10px 20px 10px 20px;
+			// float: left;
+			// width: 40%;
 			max-width: 600px;
 			box-sizing: border-box;
+
+			h1 {
+				font-size: 45px;
+			}
 
 			p {
 				width: 100%;
 			}
-		}
 
-		.social-media {
-			padding-top: 40px;
-			float: left;
-			width: 20%;
-
+			p:first-of-type {
+				width: 90%;
+			}
 		}
 
 		.contact {
-			padding-top: 10px;
-			float: right;
-			// width: 50%;
-			max-width: 700px;
-			padding-bottom: 20px;
-			width: 40%;
-			padding-left: 0;
 
-			h1 {
-				padding-top: 30px;
+			.email, .github, .instagram, .dribbble, .twitter {
+				width: 16%;
+				margin-right: 5%;
 			}
+
+			.twitter {
+				margin-right: 0;
+			}
+
+			.email {
+				margin-left: 0;
+			}
+			// padding-top: 10px;
+			// // float: right;
+			// // width: 50%;
+			// max-width: 700px;
+			// padding-bottom: 20px;
+			// width: 40%;
+			// padding-left: 0;
+
+			// h1 {
+			// 	padding-top: 30px;
+			// }
 		}
 	}
 

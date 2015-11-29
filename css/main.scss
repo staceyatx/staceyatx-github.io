@@ -12,10 +12,18 @@
 @import 'magnific-popup';
 @import 'blog';
 @import 'goodreads';
+@import 'effect1.css';
+
+#home {
+	overflow: scroll;
+
+
+}
 
 body {
 	background-color: $cream;
 	width: 100%;
+	overflow: scroll;
 	// -webkit-font-smoothing: antialiased;
 }
 	h1 {
@@ -59,6 +67,9 @@ header {
 	border-top: 4px solid $light-purple;
 	height: 45px;
 	width: 100%;
+	position: relative;
+	top: 0;
+	z-index: 2;
 
 	.container {
 		
@@ -109,161 +120,51 @@ header {
 			a:hover {
 				color: $seafoam;
 				box-shadow: inset 0 -3px 0 $orange;
-				// text-decoration: underline;
-				// text-decoration-color: $orange;
+				
 			}	
 		}
 	}
 }
 
-.work {
-	max-width: 515px;
-	// padding: 10px 5%;
-	margin: 0 auto;
-	width: 100%;
-	box-sizing: border-box;
-	overflow: hidden;
+.banner {
+	background-color: $cream;
+	position: relative;
+	border-bottom: 4px solid $purple;
+}
 
-	h1 {
-		font-family: $header-font;
-		font-size: 32px;
-		text-transform: uppercase;
-		color: $seafoam;
-		// padding-top: 20px;
-		margin-bottom: 10px;
-		-webkit-font-smoothing: antialiased;
-		// line-height: 40px;
-	}
-			// letter-spacing: -3px;
-		
-
-	h2 {
-		font-family: $paragraph-font;
-		font-size: 17px;
-		color: $purple;
-		font-style: italic;
-		-webkit-font-smoothing: antialiased;
-		// line-height: 20px;
-	}
-
-	a {
-		text-decoration: none;
-	}
-
-	.backyard-art, .kindness-project, .css-zen-garden, .goodreads {
-		border-bottom: 2px solid $orange;
-		box-sizing: border-box;
-		overflow: hidden;
-		padding: 60px 0 60px 0;
-
-		.image-wrapper {
-			border: 3px solid $purple;
-			width: 50%;
-			border-radius: 10px;
-
-			.image {
-				border-radius: 5px;
-			}
-		}
-
-		a:hover {
-
-			.image-wrapper {
-				border: 3px solid $orange;
-			}
-		}
-	}
-
-	.backyard-art {
-		padding-top: 40px;
-		
-		.image-wrapper {
-			// border: 3px solid $purple;
-			float: left;
-			margin-right: 2%;
-
-			
-			.image {
-				background: url(../images/backyard-art.jpg) 0 0 no-repeat;
-				background-size: cover;
-				width: 100%;
-				padding-bottom: 100%;
-			}
-		}
-	}
-
-	.kindness-project {
-		clear: left;
-
-		h1, h2 {
-			text-align: right;
-		}
-
-		.image-wrapper {
-			// border: 3px solid $purple;
-			float: right;
-			margin-left: 2%;
-
-			.image {
-				background: url(../images/kindness.png) 0 0 no-repeat;
-				background-size: cover;
-				width: 100%;
-				padding-bottom: 100%;
-			}
-		}
-	}
-
-	.css-zen-garden {
-		clear: right;
-
-		.image-wrapper {
-			// border: 3px solid $purple;
-			float: left;
-			margin-right: 2%;
-			
-			.image {
-				background: url(../images/csszen.png) 0 0 no-repeat;
-				background-size: cover;
-				width: 100%;
-				padding-bottom: 100%;
-			}
-		}
-	}
-
-	.goodreads {
-		clear: left;
-		border-bottom: none;
-	
-		h1, h2 {
-			text-align: right;
-		}
-
-		.image-wrapper {
-			// border: 3px solid $purple;
-			float: right;
-			margin-left: 2%;
-			
-
-			.image {
-				background: url(../images/goodreads2.png) 0 0 no-repeat;
-				background-size: cover;
-				width: 100%;
-				padding-bottom: 100%;
-			}
-		}
-	}
+.banner-image {
+  	background:url(../images/head2.png) center center no-repeat;
+  	background-size:contain;
+  	position:relative;
+  	height: 90vh;
+  	width: 90%;
+  	margin: 0 auto;
+  	max-width: 400px;
 }
 
 .info {
-	clear: both;
 	width: 100%;
-	background-color: $purple;
-	border-top: 4px solid $light-purple;
-	padding: 2%;
+	background-color: $cream;
 	overflow: hidden;
 	box-sizing: border-box;
 
+	.info-left {
+		background-color: $cream;
+		top: 0px;
+
+		.about-image {
+			background: url(../images/about4.png) center center no-repeat;
+			background-size: contain;
+			height: 50vh;
+			width: 50%;
+			margin: 0 auto;
+			max-width: 255px;
+		}
+	}
+
 	.about-me {
+		padding: 2%;
+		background-color: $purple;
 		h1 {
 			font-family: $header-font;
 			color: $seafoam;
@@ -273,19 +174,30 @@ header {
 		}
 
 		p {
+			clear: left;
 			font-family: $paragraph-font;
-			font-size: 17px;
+			font-size: 16px;
 			color: $cream;
-			padding: 10px 0px 5px 10px;;
-			line-height: 170%;
-			// width: 90%;
+			margin: 0 auto;
+			padding: 10px 10px 10px 10px;;
+			line-height: 1.75em;
+			max-width: 520px;
+		
+			&:first-of-type {
+				padding-top: 20px;
+				padding-bottom: 10px;
+				text-align: center;
+				font-weight: 500;
+				font-size: 18px;
+				color: $cream;
+				padding-left: 0;
+				padding-right: 0;
+			}
 		}
 
-		// p:first-of-type {
-		// 	text-align: center;
-		// }
 		p:last-of-type {
-			padding-bottom: 40px;
+			padding-top: 20px;
+			padding-bottom: 50px;
 		}
 
 		.image-wrapper {
@@ -293,6 +205,7 @@ header {
 		    margin: 0 auto;
 		    text-align: center;
 		    max-width: 370px;
+		    padding-top: 50px;
 		    // padding-bottom: 20px;
 
 			.profile-pic {
@@ -301,48 +214,225 @@ header {
 				width: 70%;
 				padding-bottom: 70%;
 				margin: 0 auto;
-				border-radius: 10px;
-				border: 4px solid $light-purple;
+				border-radius: 100%;
+				border: 4px solid $seafoam;
 			}
 
 			p {
 				text-align: center;
 				font-weight: 500;
 				font-size: 19px;
+				color: $purple;
 			}
 		}
-	}
 
-	.contact {
-		padding-bottom: 100px;
-		max-width: 430px;
-		margin: 0 auto;
+		.contact {
+			padding: 20px 2%;
+			padding-bottom: 40px;
+			max-width: 360px;
+			margin: 0 auto;
 
-		p {
-			font-size: 17px;
-		}
+			p {
+				font-size: 17px;
+			}
 
-		.email, .github, .instagram, .dribbble, .twitter {
-			float: left;
-			width: 18%;
-			margin-right: 2%;
+			.email, .github, .instagram, .dribbble, .twitter {
+				float: left;
+				width: 18%;
+				margin-right: 2%;
 
-			img {
+				img {
 
-				width: 100%;
-				padding-bottom: 100%;
-			}	
-		}
+					width: 100%;
+					padding-bottom: 20%;
+				}	
+			}
 
-		.email {
-			margin-left: 5px;
-		}
-
-		.twitter {
+			.twitter {
 				margin-right: 0;
 			}
+		}
 	}
 }
+
+.work {
+	margin: 0 auto;
+	width: 100%;
+	box-sizing: border-box;
+	overflow: hidden;
+
+	h1 {
+		font-family: $header-font;
+		font-size: 60px;
+		text-transform: uppercase;
+		color: $cream;
+		-webkit-font-smoothing: antialiased;
+		margin-top: -380px;
+		margin-bottom: 350px;
+		text-align: center;
+		text-shadow: 0 5px 1px rgba(0,0,0,.5);
+	}
+		
+
+	h2 {
+		font-family: $paragraph-font;
+		font-size: 17px;
+		color: $purple;
+		font-style: italic;
+		-webkit-font-smoothing: antialiased;
+		display: none;
+		// line-height: 20px;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	.work-left {
+		// height: 459px;
+		background-color: $cream;
+
+		.work-image {
+			background: url(../images/work.png) center center no-repeat;
+			background-size: contain;
+			height: 50vh;
+			width: 50%;
+			margin: 0 auto;
+			max-width: 255px;
+		}
+
+		h4 {
+			font-family: $paragraph-font;
+			color: $purple;
+			font-size: 16px;
+			text-align: center;
+			line-height: 160%;
+			margin-top: -100px;
+
+			&:last-of-type {
+				margin-bottom: 100px;
+				margin-top: 0;
+			}
+		}
+	}
+
+	.backyard-art, .kindness-project, .css-zen-garden, .goodreads {
+		// border-bottom: 2px solid $light-purple;
+		box-sizing: border-box;
+		overflow: hidden;
+		clear: left;
+		// padding: 30px 0 30px 0;
+
+		.image-wrapper {
+			// border: 3px solid $purple;
+			width: 100%;
+			height: 100vh;
+			// border-radius: 10px;
+
+			.image {
+				// border-radius: 5px;
+			}
+		}
+
+		a:hover {
+
+			.image-wrapper {
+				// border: 3px solid $orange;
+			}
+		}
+	}
+
+	.backyard-art {
+		// padding-top: 40px;
+		
+		.image-wrapper {
+			// border: 3px solid $purple;
+			// float: left;
+			// margin-right: 2%;
+
+			
+			.image {
+				background: url(../images/two.jpg) center center no-repeat;
+				background-size: cover;
+				// background-position: 100% 100%;
+				width: 100%;
+				height: 100vh;
+			}
+		}
+	}
+
+	.kindness-project {
+		// clear: left;
+
+		// h1, h2 {
+		// 	text-align: right;
+		// }
+
+		h1 {
+			margin-bottom: 300px;
+
+		}
+
+		.image-wrapper {
+			// border: 3px solid $purple;
+			// float: right;
+			// margin-left: 2%;
+
+			.image {
+				background: url(../images/kind.jpg) center center no-repeat;
+				background-size: cover;
+				width: 100%;
+				height: 100vh;
+			}
+		}
+	}
+
+	.css-zen-garden {
+		// clear: right;
+
+		.image-wrapper {
+			// border: 3px solid $purple;
+			// float: left;
+			// margin-right: 2%;
+			
+			.image {
+				background: url(../images/piet1.jpg) center center no-repeat;
+				background-size: cover;
+				width: 100%;
+				height: 100vh;
+			}
+		}
+	}
+
+	.goodreads {
+		// clear: left;
+		// border-bottom: none;
+	
+		// h1, h2 {
+		// 	text-align: right;
+		// }
+
+		h1 {
+			margin-bottom: 300px;
+		}
+
+		.image-wrapper {
+			// border: 3px solid $purple;
+			// float: right;
+			// margin-left: 2%;
+			
+
+			.image {
+				background: url(../images/good1.jpg) center center no-repeat;
+				background-size: cover;
+				width: 100%;
+				height: 100vh;
+			}
+		}
+	}
+}
+
+
 
 footer {
 	background-color: $purple;
@@ -351,7 +441,8 @@ footer {
 	border-top: 4px solid $light-purple; 
 	box-sizing: border-box;
 	clear: both;
-	// margin-top: 20px;
+	margin-top: -40px;
+	
 
 	.image-wrapper {
 		// width: 78px;
@@ -371,6 +462,7 @@ footer {
 		height: 60px;
 		margin-top: 13px;
 		width: 100%;
+		position: relative;
 		// z-index: 99;
 		// position: fixed;
 
@@ -426,6 +518,16 @@ footer {
 		}
 	}
 
+	.banner {
+
+		.banner-image {
+			// margin-top: -20px;
+			max-width: 500px;
+			height: 90vh;
+
+		}
+	}
+
 	.work {
 		padding-bottom: 40px;
 		// padding-top: 150px;
@@ -433,179 +535,7 @@ footer {
 		margin: 0 auto;
 		width: 100%;
 		box-sizing: border-box;
-		max-width: 1000px;
-
-
-		.backyard-art, .kindness-project, .css-zen-garden, .goodreads {
-			border-bottom: none;
-			padding: 25px 0 20px 0;
-			// width: 50%;
-			margin: 0 auto;
-
-			.image-wrapper {
-				width: 95%;
-				border: 5px solid $purple;
-				margin-bottom: 20px;
-			}
-
-			a:hover {
-
-				.image-wrapper {
-					border: 5px solid $orange;
-				}
-			}
-		}
-
-		.backyard-art {
-			padding-right: 2.5%;
-			float: left;
-			padding-left: 5%;
-			padding: right;
-
-
-			h1, h2 {
-				clear: left;
-			}
-
-			.image-wrapper {
-
-			}
-
-		}
-
-		.kindness-project {
-			padding-right: 5%;
-			clear: none;
-			float: left;
-			padding-left: 2.5%;
-
-			h1, h2 {
-				clear: right;
-				text-align: left;
-			}
-
-		}
-
-		.css-zen-garden {
-			padding-right: 2.5%;
-			padding-left: 5%;
-			clear: left;
-			float: left;
-			h1, h2 {
-				clear: left;
-			}
-		}
-
-		.goodreads {
-			padding-left: 2.5%;
-			padding-right: 5%;
-			float: left;
-			clear: none;
-
-			h1, h2 {
-				clear: right;
-				text-align: left;
-			}
-		}
-
-		.one, .two, .three, .four {
-			float: none;
-			padding: 0;
-
-			.image-wrapper {
-				// height: 300px;
-				width: 100%;
-				border: none;
-				border-radius: 0;
-
-				.image {
-					padding-bottom: 20%;
-					// height: 300px;
-					width: 100%;
-					border-radius: 0;
-				}
-			}
-
-			h1 {
-				margin-top: -130px;
-				float: left;
-				text-align: center;
-				font-size: 80px;
-			}
-
-			h2 {
-				float: left;
-				margin-top: -40px;
-				color: $cream;
-			}
-		}
-
-		.two {
-
-			.image-wrapper {
-
-				.image {
-					background: url(../images/kindness.png) 0 0 no-repeat;
-				}
-			}
-		}
-
-		.three {
-			.image-wrapper {
-
-				.image {
-					background: url(../images/css-zen-large.jpg) 0 0 no-repeat;
-				}
-			}
-		}
-
-		.four {
-			.image-wrapper {
-
-				.image {
-					background: url(../images/goodreads2.png) 0 0 no-repeat;
-				}
-			}
-		}
-		// .two {
-		// 	float: none;
-
-		// 	.image-wrapper {
-		// 		height: 300px;
-		// 		width: 100%;
-
-		// 		.image {
-		// 			height: 300px;
-		// 			width: 100%;
-		// 		}
-		// 	}
-		// }
-		// .three {
-		// 	float: none;
-
-		// 	.image-wrapper {
-		// 		height: 300px;
-		// 		width: 100%;
-
-		// 		.image {
-		// 			height: 300px;
-		// 			width: 100%;
-		// 		}
-		// 	}
-		// }
-		// .four {
-		// 	float: none;
-
-		// 	.image-wrapper {
-		// 		height: 300px;
-		// 		width: 100%;
-
-		// 		.image {
-		// 			height: 300px;
-		// 			width: 100%;
-		// 		}
-		// 	}
-		// }
+		// max-width: 1000px;
 	}
 
 	
@@ -616,10 +546,17 @@ footer {
 
 		.about-me {
 			margin: 0 auto;
-			width: 80%;
+			// width: 80%;
 
 			h1 {
 				font-size: 40px;
+			}
+
+			p {
+			font-size: 18px;
+			color: $cream;
+			width: 80%;
+			margin: 0 auto;
 			}
 		}
 
@@ -633,6 +570,7 @@ footer {
 
 	header {
 		z-index: 99;
+		position: relative;
 		// position: fixed;
 		height: 80px;
 		
@@ -686,204 +624,60 @@ footer {
 			}
 		}
 	}
-	
-	.work {
-		max-width: 890px;
-		margin-top: 0px;
-		padding-top: 180px;
-		overflow: hidden;
-		box-sizing: border-box;
 
-		h1, h2 {
-			// margin-top: -300px;
-			display: none;
-			// overflow: auto;
-			// clear: none;
+	.banner {
+		z-index: 80;
+		background-color: $cream;
+
+		.banner-image {
+			margin-top: 0;
+			max-width: 520px;
+			height: 90vh;
 		}
 
-		// a:hover {
-		// 	h1 {
-		// 		display: inline-block;
-		// 		top: -100px;
-		// 	}
+		// .banner-image {
+		//   background:url(../images/head4.png) center center no-repeat;
+  // background-size:contain;
+  // position:relative;
+  // height: 100vh;
+  // width: 90%;
+  // margin: 0 auto;
+  // max-width: 400px;
+
+		// .banner-image {
+		// 	background-color: $cream;
+		// 	width: 100%;
 		// }
-
-		.backyard-art, .kindness-project, .css-zen-garden, .goodreads {
-			width: 50%;
-			overflow: hidden;
-			// max-width: 642px;
-			// min-width: 318px;
-
-		// 	h1, h2 {
-		// 	margin-top: -300px;
-		// 	// display: none;
-		// 	overflow: auto;
-		// 	// clear: none;
-		// }
-
-			// a:hover {
-			// 	h1 {
-			// 		font-size: 40px;
-			// 		display: inline-block;
-			// 		position: absolute;
-			// 		top: 200px;
-			// 		// margin-top: -100%;
-			// 	}
-			// }
-
-			.image-wrapper {
-				// border: 6px solid $purple;
-			}
-		}
-
-		.backyard-art {
-
-			a:hover {
-				h1 {
-					float: left;
-					clear: none;
-					font-size: 48px;
-					display: inline-block;
-					margin-top: -110px;
-					margin-left: 10px;
-				}
-
-				h2 {
-					color: $orange;
-					float: left;
-					// clear: none;
-					font-size: 23px;
-					display: inline-block;
-					margin-top: -60px;
-					margin-left: 10px;
-				}
-				
-				.image {
-					background: 
-				    linear-gradient(
-				      rgba(0, 0, 0, 0.5),
-				      rgba(0, 0, 0, 0.5)
-				    ),
-				    url(../images/backyard-art.jpg);
-				    background-size: cover;
-				}
-
-			}
-		}
-
-		.kindness-project {
-			a:hover {
-				h1 {
-					float: left;
-					clear: none;
-					font-size: 48px;
-					display: inline-block;
-					margin-top: -160px;
-					margin-left: 20px;
-				}
-
-				h2 {
-					color: $orange;
-					float: left;
-					// clear: none;
-					font-size: 23px;
-					display: inline-block;
-					margin-top: -60px;
-					margin-left: 20px;
-				}
-				
-				.image {
-					background: 
-				    linear-gradient(
-				      rgba(0, 0, 0, 0.5),
-				      rgba(0, 0, 0, 0.5)
-				    ),
-				    url(../images/kindness.png);
-				    background-size: cover;
-				}
-
-			}
-		}
-
-		.css-zen-garden {
-			a:hover {
-				h1 {
-					float: left;
-					clear: none;
-					font-size: 48px;
-					display: inline-block;
-					margin-top: -110px;
-					margin-left: 10px;
-				}
-
-				h2 {
-					color: $orange;
-					float: left;
-					// clear: none;
-					font-size: 23px;
-					display: inline-block;
-					margin-top: -60px;
-					margin-left: 10px;
-				}
-				
-				.image {
-					background: 
-				    linear-gradient(
-				      rgba(0, 0, 0, 0.6),
-				      rgba(0, 0, 0, 0.6)
-				    ),
-				    url(../images/csszen.png);
-				    background-size: cover;
-				}
-
-			}
-		}
-
-		.goodreads {
-			a:hover {
-				h1 {
-					float: left;
-					clear: none;
-					font-size: 48px;
-					display: inline-block;
-					margin-top: -110px;
-					margin-left: 15px;
-				}
-
-				h2 {
-					color: $orange;
-					float: left;
-					// clear: none;
-					font-size: 23px;
-					display: inline-block;
-					margin-top: -60px;
-					margin-left: 15px;
-				}
-				
-				.image {
-					background: 
-				    linear-gradient(
-				      rgba(0, 0, 0, 0.6),
-				      rgba(0, 0, 0, 0.6)
-				    ),
-				    url(../images/goodreads2.png);
-				    background-size: cover;
-				}
-
-			}
-
-		}
 	}
-	
+
 	.info {
 		overflow: hidden;
+		position: relative;
+
+		.info-left {
+			float: left;
+			width: 50%;
+			position: fixed;
+			// position: absolute;
+			height: 135vh;
+			// top: 0;
+			//     z-index: 200;
+
+			.about-image {
+				margin-top: 100px;
+			}
+		}
 
 		.about-me {
+			position: relative;
+			float: right;
+			width: 50%;
 			// padding: 10px 20px 10px 20px;
 			// float: left;
 			// width: 40%;
-			max-width: 600px;
+			// max-width: 600px;
 			box-sizing: border-box;
+			z-index: 100;
 
 			h1 {
 				font-size: 45px;
@@ -894,42 +688,88 @@ footer {
 			}
 
 			p:first-of-type {
-				width: 90%;
+				font-size: 20px;
+				// width: 90%;
+			}
+
+			.contact {
+				max-width: 350px;
+
+				.email, .github, .instagram, .dribbble, .twitter {
+					width: 16%;
+					margin-right: 5%;
+				}
+
+				.twitter {
+					margin-right: 0;
+				}
+
+				.email {
+					margin-left: 0;
+				}
+				
 			}
 		}
 
-		.contact {
-			max-width: 350px;
+		
+		
+	}
+	
+	.work {
+		// max-width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
 
-			.email, .github, .instagram, .dribbble, .twitter {
-				width: 16%;
-				margin-right: 5%;
+		position: relative;
+
+		.work-left {
+			float: right;
+			width: 50%;
+			height: 100vh;
+			position: fixed;
+			top: 0;
+			right: 0;
+			// margin: 10px 0 15px 0;
+
+			.work-image {
+				margin-top: 100px;
 			}
+		}
 
-			.twitter {
-				margin-right: 0;
+		#main {
+			width: 50%;
+			float: left;
+			min-height: 200px;
+			// clear: right;
+
+		// .backyard-art, .kindness-project, .css-zen-garden, .goodreads {
+		// 	width: 50%;
+		// 	float: right;
+		// 	// overflow: hidden;
+		// 	clear: right;
+			
+		// }
+
+		.kindness-project {
+			h1 {
+				margin-top: -450px;
 			}
-
-			.email {
-				margin-left: 0;
-			}
-			// padding-top: 10px;
-			// // float: right;
-			// // width: 50%;
-			// max-width: 700px;
-			// padding-bottom: 20px;
-			// width: 40%;
-			// padding-left: 0;
-
-			// h1 {
-			// 	padding-top: 30px;
-			// }
 		}
 	}
 
-	footer {
 		
-		height: 45px;	
-	}	
+	}
+	
+	
+
+	#footer {
+		clear: both;
+		// margin-top: 10px;
+		z-index: 200;
+		height: 45px;
+		position: relative;	
+	}
+
+
 }
 

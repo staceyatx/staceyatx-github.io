@@ -41,3 +41,5 @@ $('.gallery-item').magnificPopup({
     enabled:true
   }
 });
+
+

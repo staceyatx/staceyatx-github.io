@@ -572,7 +572,7 @@ footer {
 		z-index: 99;
 		position: relative;
 		// position: fixed;
-		height: 80px;
+		// height: 80px;
 		
 		.container {
 			max-width: 1200px;
@@ -585,7 +585,7 @@ footer {
 					float: left;
 					font-size: 35px;
 					// padding-right: 50px;
-					padding-top: 25px;
+					padding-top: 15px;
 				}
 
 				h3{
@@ -595,7 +595,7 @@ footer {
 					font-size: 24px;
 					// color: $cream;
 					text-transform: uppercase;
-					padding-top: 28px;
+					padding-top: 20px;
 					margin-left: -10px;
 					// padding-right: 50px;
 				}
@@ -606,14 +606,14 @@ footer {
 				margin-top: -30px;
 
 				.logo-image {
-					height: 175px;
-					width: 175px;
+					// height: 175px;
+					// width: 175px;
 				}
 			}
 
 			nav {
 				float: right;
-				padding-top: 28px;
+				padding-top: 20px;
 				// font-size: 10px;
 				// margin-left: 15px;
 

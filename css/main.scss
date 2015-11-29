@@ -98,12 +98,12 @@ header {
 
 		nav {
 			float: right; 
-			padding: 15px 3px 20px 0;
+			padding: 12px 3px 20px 0;
 
 			a {
 				vertical-align: center;
 				font-family: $header-font;
-				font-size: 17px;
+				font-size: 24px;
 				text-transform: uppercase;
 				// padding: 20px 0;
 				text-decoration: none;
@@ -477,8 +477,8 @@ footer {
 
 				h1 {
 					text-align: left;
-					padding: 16px 25px 10px 15px;
-					font-size: 32px;
+					padding: 15px 25px 10px 15px;
+					font-size: 35px;
 					text-transform: uppercase;
 					color: $seafoam;
 				}
@@ -508,7 +508,7 @@ footer {
 				// padding-left: 20px;
 
 				a {
-					font-size: 22px;
+					font-size: 24px;
 				}
 
 				a:last-child {
@@ -522,7 +522,7 @@ footer {
 
 		.banner-image {
 			// margin-top: -20px;
-			max-width: 500px;
+			max-width: 450px;
 			height: 90vh;
 
 		}

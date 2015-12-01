@@ -60,8 +60,8 @@
 }
 
 .post {
-	padding: 60px 20px;
-	max-width: 600px;
+	padding: 0px 20px;
+	max-width: 500px;
 	margin: 0 auto;
 
 	.post-meta {
@@ -75,6 +75,7 @@
 			color: $seafoam;
 			font-size: 40px;
 			padding-bottom: 10px;
+			width: 110%;
 		}	
 
 		.post-meta {
@@ -88,7 +89,7 @@
 
 	.post-content {
 		p {
-			line-height: 160%;
+			line-height: 1.75em;
 			padding: 10px 0; 
 			font-size: 17px;
 		}
@@ -215,11 +216,12 @@
 
 @media screen and (min-width: 862px) {
 	.home {
-		padding-bottom: 50px;
+		// padding-top: 50px;
+		// padding: 40px 0;
 	}
 
 	.post {
-		padding-top: 200px;
+		padding-top: 100px;
 
 		.post-header {
 

@@ -103,7 +103,7 @@ header {
 			a {
 				vertical-align: center;
 				font-family: $header-font;
-				font-size: 24px;
+				font-size: 22px;
 				text-transform: uppercase;
 				// padding: 20px 0;
 				text-decoration: none;
@@ -134,12 +134,31 @@ header {
 
 .banner-image {
   	background:url(../images/head5.png) center center no-repeat;
-  	background-size:contain;
-  	position:relative;
-  	height: 90vh;
+  	background-size: contain;
+  	position: relative;
+  	height: 100vh;
   	width: 90%;
   	margin: 0 auto;
   	max-width: 400px;
+  	margin-top: -50px;
+
+  	.arrow {
+  position: absolute;
+  bottom: 30px;
+  left: 45%;
+  // margin-left:-20px;
+  width: 42px;
+  height: 28px;
+  background-image: url(../images/down.png);
+  background-size: 100% 100%;
+}
+
+.bounce {
+	@include bounce;
+  animation: bounce 2s infinite;
+
+
+}
 }
 
 .info {
@@ -523,7 +542,7 @@ footer {
 		.banner-image {
 			// margin-top: -20px;
 			max-width: 450px;
-			height: 90vh;
+			// height: 90vh;
 
 		}
 	}
@@ -632,9 +651,14 @@ footer {
 		background-color: $cream;
 
 		.banner-image {
-			margin-top: 0;
-			// max-width: 520px;
-			height: 90vh;
+			// margin-top: 0;
+			// // max-width: 520px;
+			// height: 90vh;
+
+			.arrow { 
+				width: 52px;
+ 				height: 35px;
+ 			}
 		}
 	}
 

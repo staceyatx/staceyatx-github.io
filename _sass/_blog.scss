@@ -1,3 +1,8 @@
+// .container {
+// 	// overflow: hidden;
+// 	box-sizing: border-box;
+// }
+
 .home {
 	// min-height: 100%;
 	max-width: 600px;
@@ -63,19 +68,23 @@
 	padding: 0px 20px;
 	max-width: 500px;
 	margin: 0 auto;
+	box-sizing: border-box;
+	// 	overflow: hidden;
 
 	.post-meta {
 		font-size: 18px;
 	}	
 
 	.post-header {
+		// overflow: hidden;
 		// padding-top: 60px;
 
 		h1 {
 			color: $seafoam;
 			font-size: 40px;
 			padding-bottom: 10px;
-			width: 110%;
+			// width: 110%;
+			padding-top: 50px;
 		}	
 
 		.post-meta {
@@ -88,6 +97,10 @@
 	}
 
 	.post-content {
+		padding-bottom: 100px;
+		box-sizing: border-box;
+		overflow: hidden;
+
 		p {
 			line-height: 1.75em;
 			padding: 10px 0; 
@@ -98,7 +111,7 @@
 			font-family: $header-font;
 			color: $orange;
 			font-style: normal;
-			padding: 30px 0 10px 0;
+			padding: 40px 0 10px 0;
 			text-transform: uppercase;
 			font-size: 32px;
 		}
@@ -106,10 +119,12 @@
 		h3 {
 			font-family: $paragraph-font;
 			text-transform: none;
-			font-style: italic;
+			// font-style: italic;
 			color: $purple;
-			font-size: 20px;
+			font-size: 22px;
 			padding-top: 20px;
+			padding-bottom: 10px;
+			padding-top: 30px;
 		}
 
 		a {
@@ -136,6 +151,7 @@
 				color: $purple;
 				// padding: 5px 0;
 				margin: 5px;
+				line-height: 1.75em;
 				
 				ul {
 					list-style-type: circle;
@@ -150,7 +166,7 @@
 				list-style: decimal;
 				font-family: $paragraph-font;
 				color: $purple;
-				line-height: 170%;
+				line-height: 1.75em;
 			}
 		}
 

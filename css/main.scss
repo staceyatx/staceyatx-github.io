@@ -20,45 +20,51 @@
 
 }
 
+// .page-content {
+// 	box-sizing: border-box;
+// 	overflow: hidden;
+// }
+
 body {
 	background-color: $cream;
 	width: 100%;
 	overflow: scroll;
 	// -webkit-font-smoothing: antialiased;
 }
-	h1 {
-		font-family: $header-font;
-		text-transform: uppercase;
-		// letter-spacing: -2.5px;
-		font-weight: 700;
-		-webkit-font-smoothing: antialiased;
-	}
 
-	h2 {
-		font-family: $paragraph-font;
-		font-size: 20px;
-		color: $purple;
-		font-style: italic;
-		font-weight: 500;
-		// -webkit-font-smoothing: antialiased;
-	}
+h1 {
+	font-family: $header-font;
+	text-transform: uppercase;
+	// letter-spacing: -2.5px;
+	font-weight: 700;
+	-webkit-font-smoothing: antialiased;
+}
 
-	h3 {
-		font-family: $header-font;
-		text-transform: uppercase;
-		color: $orange;
-		font-size: 28px;
-		// letter-spacing: -2.5px;
-		font-weight: 700;
-		-webkit-font-smoothing: antialiased;
+h2 {
+	font-family: $paragraph-font;
+	font-size: 18px;
+	color: $purple;
+	// font-style: italic;
+	font-weight: 500;
+	-webkit-font-smoothing: antialiased;
+}
 
-	}
+h3 {
+	font-family: $header-font;
+	text-transform: uppercase;
+	color: $orange;
+	font-size: 28px;
+	font-weight: 700;
+	-webkit-font-smoothing: antialiased;
 
-	p {
-		font-family: $paragraph-font;
-		color: $purple;
-		// -webkit-font-smoothing: antialiased;
-	}
+}
+
+p {
+	font-family: $paragraph-font;
+	color: $purple;
+	line-height: 1.75em;
+	-webkit-font-smoothing: antialiased;
+}
 
 header {
 	margin: 13px auto 0 auto;
@@ -70,6 +76,7 @@ header {
 	position: relative;
 	top: 0;
 	z-index: 2;
+	// overflow: visible;
 
 	.container {
 		
@@ -88,11 +95,8 @@ header {
 				background: url(../images/logo4.png) 0 0 no-repeat;
 				background-size: 100%;
 				background-position: center;
-				// border-radius: 50%;
 				height: 100px;
 				width: 100px;
-				// background-color: #f3eade;
-				// border: 4px solid #90C5A9;
 			}
 		}
 
@@ -105,18 +109,17 @@ header {
 				font-family: $header-font;
 				font-size: 22px;
 				text-transform: uppercase;
-				// padding: 20px 0;
 				text-decoration: none;
 				color: $cream;
 				margin: 5px;
-				// letter-spacing: -2px;
 				font-weight: 700;
 				-webkit-font-smoothing: antialiased;
 			}
 
 			a:last-child {
-				// margin-right: 10px;
+				margin-right: 10px;
 			}
+
 			a:hover {
 				color: $seafoam;
 				box-shadow: inset 0 -3px 0 $orange;
@@ -143,22 +146,21 @@ header {
   	margin-top: -50px;
 
   	.arrow {
-  position: absolute;
-  bottom: 30px;
-  left: 45%;
-  // margin-left:-20px;
-  width: 42px;
-  height: 28px;
-  background-image: url(../images/down.png);
-  background-size: 100% 100%;
-}
+	  	position: absolute;
+	  	bottom: 30px;
+	  	left: 44%;
+	  	width: 42px;
+	  	height: 42px;
+	  	background-image: url(../images/down2.png);
+	  	background-size: 100% 100%;
+	}
 
-.bounce {
-	@include bounce;
-  animation: bounce 2s infinite;
+	.bounce {
+		@include bounce;
+		animation: bounce 2s infinite;
 
 
-}
+	}
 }
 
 .info {
@@ -175,7 +177,7 @@ header {
 			background: url(../images/about4.png) center center no-repeat;
 			background-size: contain;
 			height: 50vh;
-			width: 50%;
+			width: 60%;
 			margin: 0 auto;
 			max-width: 255px;
 		}
@@ -184,12 +186,12 @@ header {
 	.about-me {
 		padding: 2%;
 		background-color: $purple;
+
 		h1 {
 			font-family: $header-font;
 			color: $seafoam;
 			font-size: 32px;
 			padding: 40px 10px 50px 10px;
-			// letter-spacing: -2.5px;
 		}
 
 		p {
@@ -198,40 +200,47 @@ header {
 			font-size: 16px;
 			color: $cream;
 			margin: 0 auto;
-			padding: 10px 10px 10px 10px;;
+			padding: 20px 10px 10px 10px;
 			line-height: 1.75em;
 			max-width: 520px;
+			font-weight: 300;
+			-webkit-font-smoothing: antialiased;
 		
-			&:first-of-type {
-				padding-top: 20px;
-				padding-bottom: 10px;
+			&:nth-of-type(3) {
+				// padding-top: 20px;
+				// padding-bottom: 10px;
 				text-align: center;
-				font-weight: 500;
-				font-size: 18px;
-				color: $cream;
-				padding-left: 0;
-				padding-right: 0;
+				font-family: $header-font;
+				font-size: 22px;
+				color: $seafoam;
+				padding: 40px 0 30px 0;
+				// padding-left: 0;
+				// padding-right: 0;
+				text-transform: uppercase;
+				-webkit-font-smoothing: none;
+			}
+
+			&:last-of-type {
+				padding-top: 20px;
+				padding-bottom: 50px;
+			}
+
+			&:first-of-type {
+				padding-top: 40px;
 			}
 		}
 
-		p:last-of-type {
-			padding-top: 20px;
-			padding-bottom: 50px;
-		}
-
 		.image-wrapper {
-			// width: 90%;
 		    margin: 0 auto;
 		    text-align: center;
-		    max-width: 370px;
+		    max-width: 330px;
 		    padding-top: 50px;
-		    // padding-bottom: 20px;
 
 			.profile-pic {
 				background: url(../images/pic1.jpg) 0 0 no-repeat;
 				background-size: cover;
-				width: 70%;
-				padding-bottom: 70%;
+				width: 60%;
+				padding-bottom: 60%;
 				margin: 0 auto;
 				border-radius: 100%;
 				border: 4px solid $seafoam;
@@ -282,98 +291,88 @@ header {
 
 	h1 {
 		font-family: $header-font;
-		font-size: 60px;
+		font-size: 35px;
 		text-transform: uppercase;
 		color: $cream;
 		-webkit-font-smoothing: antialiased;
 		margin-top: -380px;
 		margin-bottom: 350px;
 		text-align: center;
-		text-shadow: 0 5px 1px rgba(0,0,0,.5);
+		// text-shadow: 2px 4px 2px rgba(0,0,0,.2);
 	}
 		
 
-	h2 {
-		font-family: $paragraph-font;
-		font-size: 17px;
-		color: $purple;
-		font-style: italic;
-		-webkit-font-smoothing: antialiased;
-		display: none;
-		// line-height: 20px;
-	}
+	// h2 {
+	// 	font-family: $paragraph-font;
+	// 	font-size: 17px;
+	// 	color: $orange;
+	// 	font-style: italic;
+	// 	-webkit-font-smoothing: antialiased;
+	// 	display: none;
+	// }
 
 	a {
 		text-decoration: none;
 	}
 
 	.work-left {
-		// height: 459px;
 		background-color: $cream;
 
 		.work-image {
 			background: url(../images/work.png) center center no-repeat;
 			background-size: contain;
 			height: 50vh;
-			width: 50%;
+			width: 60%;
 			margin: 0 auto;
 			max-width: 255px;
 		}
 
 		h4 {
 			font-family: $paragraph-font;
-			color: $purple;
-			font-size: 16px;
+			color: $orange;
+			font-size: 14px;
 			text-align: center;
-			line-height: 160%;
+			line-height: 1.75em;
 			margin-top: -100px;
 
 			&:last-of-type {
 				margin-bottom: 100px;
 				margin-top: 0;
 			}
+
+			a {
+				color: $orange;
+			}
+
+			a:hover {
+				color: $seafoam;
+				box-shadow: inset 0 -3px 0 $orange;
+				
+			}	
 		}
 	}
 
 	.backyard-art, .kindness-project, .css-zen-garden, .goodreads {
-		// border-bottom: 2px solid $light-purple;
 		box-sizing: border-box;
 		overflow: hidden;
 		clear: left;
-		// padding: 30px 0 30px 0;
 
 		.image-wrapper {
-			// border: 3px solid $purple;
 			width: 100%;
 			height: 100vh;
-			// border-radius: 10px;
-
-			.image {
-				// border-radius: 5px;
-			}
-		}
-
-		a:hover {
-
-			.image-wrapper {
-				// border: 3px solid $orange;
-			}
 		}
 	}
 
 	.backyard-art {
-		// padding-top: 40px;
 		
 		.image-wrapper {
-			// border: 3px solid $purple;
-			// float: left;
-			// margin-right: 2%;
-
 			
 			.image {
-				background: url(../images/two.jpg) center center no-repeat;
+				background: linear-gradient(
+			      rgba(0, 0, 0, 0.01),
+			      rgba(0, 0, 0, 0.2)
+			    ), url(../images/two.jpg) center center no-repeat;
 				background-size: cover;
-				// background-position: 100% 100%;
 				width: 100%;
 				height: 100vh;
 			}
@@ -381,24 +380,18 @@ header {
 	}
 
 	.kindness-project {
-		// clear: left;
-
-		// h1, h2 {
-		// 	text-align: right;
-		// }
 
 		h1 {
 			margin-bottom: 300px;
-
 		}
 
 		.image-wrapper {
-			// border: 3px solid $purple;
-			// float: right;
-			// margin-left: 2%;
 
 			.image {
-				background: url(../images/kind.jpg) center center no-repeat;
+				background: linear-gradient(
+			      rgba(0, 0, 0, 0.05),
+			      rgba(0, 0, 0, 0.31)
+			    ), url(../images/kind.jpg) center center no-repeat;
 				background-size: cover;
 				width: 100%;
 				height: 100vh;
@@ -407,15 +400,14 @@ header {
 	}
 
 	.css-zen-garden {
-		// clear: right;
 
 		.image-wrapper {
-			// border: 3px solid $purple;
-			// float: left;
-			// margin-right: 2%;
 			
 			.image {
-				background: url(../images/piet1.jpg) center center no-repeat;
+				background: linear-gradient(
+			      rgba(0, 0, 0, 0.05),
+			      rgba(0, 0, 0, 0.0)
+			    ), url(../images/piet1.jpg) center center no-repeat;
 				background-size: cover;
 				width: 100%;
 				height: 100vh;
@@ -424,25 +416,18 @@ header {
 	}
 
 	.goodreads {
-		// clear: left;
-		// border-bottom: none;
-	
-		// h1, h2 {
-		// 	text-align: right;
-		// }
 
 		h1 {
 			margin-bottom: 300px;
 		}
 
 		.image-wrapper {
-			// border: 3px solid $purple;
-			// float: right;
-			// margin-left: 2%;
-			
 
 			.image {
-				background: url(../images/good1.jpg) center center no-repeat;
+				background: linear-gradient(
+			      rgba(0, 0, 0, 0.5),
+			      rgba(0, 0, 0, 0.2)
+			    ), url(../images/good2.jpg) center center no-repeat;
 				background-size: cover;
 				width: 100%;
 				height: 100vh;
@@ -547,17 +532,6 @@ footer {
 		}
 	}
 
-	.work {
-		padding-bottom: 40px;
-		// padding-top: 150px;
-		// padding: 0px 20px;
-		margin: 0 auto;
-		width: 100%;
-		box-sizing: border-box;
-		// max-width: 1000px;
-	}
-
-	
 	.info {
 		margin-top: 40px;
 		clear: both;
@@ -572,9 +546,9 @@ footer {
 			}
 
 			p {
-			font-size: 18px;
+			// font-size: 18px;
 			color: $cream;
-			width: 80%;
+			width: 90%;
 			margin: 0 auto;
 			}
 		}
@@ -584,7 +558,18 @@ footer {
 			margin: 0 auto;
 		}
 	}
+
+	.work {
+		padding-bottom: 40px;
+		// padding-top: 150px;
+		// padding: 0px 20px;
+		margin: 0 auto;
+		width: 100%;
+		box-sizing: border-box;
+		// max-width: 1000px;
+	}
 }
+
 @media screen and (min-width: 862px) {
 
 	header {
@@ -653,11 +638,11 @@ footer {
 		.banner-image {
 			// margin-top: 0;
 			// // max-width: 520px;
-			// height: 90vh;
+			height: 98vh;
 
 			.arrow { 
-				width: 52px;
- 				height: 35px;
+				width: 55px;
+ 				height: 55px;
  			}
 		}
 	}
@@ -676,7 +661,7 @@ footer {
 			//     z-index: 200;
 
 			.about-image {
-				margin-top: 100px;
+				margin-top: 130px;
 			}
 		}
 
@@ -696,16 +681,20 @@ footer {
 			}
 
 			p {
-				width: 100%;
+				width: 90%;
 			}
 
-			p:first-of-type {
-				font-size: 20px;
+			p:nth-of-type(3) {
+				font-size: 38px;
 				// width: 90%;
 			}
 
+			.image-wrapper {
+				padding-top: 40px;
+			}
+
 			.contact {
-				max-width: 350px;
+				max-width: 280px;
 
 				.email, .github, .instagram, .dribbble, .twitter {
 					width: 16%;
@@ -731,8 +720,11 @@ footer {
 		// max-width: 1000px;
 		margin-left: auto;
 		margin-right: auto;
-
 		position: relative;
+
+		h1 {
+			font-size: 40px;
+		}
 
 		.work-left {
 			float: right;
@@ -762,11 +754,11 @@ footer {
 			
 		// }
 
-		.kindness-project {
-			h1 {
-				margin-top: -450px;
-			}
-		}
+		// .kindness-project {
+		// 	h1 {
+		// 		margin-top: -450px;
+		// 	}
+		// }
 	}
 
 		

@@ -4,7 +4,7 @@ email: emilydevollart@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
  Emily DeVoll's UI Design portfolio and personal website.
 baseurl: "/" # the subpath of your site, e.g. /blog/
-url: "http://http://emilydevoll.com" # the base hostname & protocol for your site
+url: "http://emilydevoll.com" # the base hostname & protocol for your site
 twitter_username: devollemily
 github_username:  emilydevoll
 

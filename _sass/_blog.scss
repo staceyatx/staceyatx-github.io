@@ -66,7 +66,7 @@
 
 .post {
 	padding: 0px 20px;
-	max-width: 500px;
+	max-width: 520px;
 	margin: 0 auto;
 	box-sizing: border-box;
 	// 	overflow: hidden;
@@ -160,13 +160,16 @@
 		}
 
 		ol {
-			margin: 10px;
+			padding: 20px 0;
+			margin-left: 50px;
+			list-style-type: decimal;
 
 			li {
-				list-style: decimal;
 				font-family: $paragraph-font;
 				color: $purple;
 				line-height: 1.75em;
+				list-style-type: decimal;
+				font-weight: 500;
 			}
 		}
 

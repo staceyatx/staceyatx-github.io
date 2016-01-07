@@ -4,11 +4,11 @@ title:  "And So It Begins.. The Dreaded Job Hunt"
 categories: jekyll update
 ---
 
-Here's an inside look into what my experience has been like applying for jobs as a newcomer in the tech community and some helpful tips I've learned along the way.
+Here's an inside look into what my experience has been like applying for jobs as a newcomer in the tech community, plus some helpful tips I've learned along the way.
 
 First of all, let me start off with saying that as much as I love being a part-time commission artist, at times it can be extremely frustrating. Especially since the holidays are my busiest season and it has kept me from being able to apply to jobs. So, after almost 2 months since graduating from The Iron Yard, I've finally begun my journey on the much anticipated (and dreaded) job seeking adventure.
 
-Being that I am so new to this industry, there are a lot of factors that go into this whole job process that I find to be interesting, terrifying, or both.
+Being that I am so new to this industry, there are a lot of factors that go into this whole job process that I find to be either interesting, terrifying, or both.
 
 ## Online Appearance/Involvement in Tech Community
 

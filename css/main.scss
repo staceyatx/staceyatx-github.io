@@ -81,7 +81,7 @@ header {
 			text-align: center;
 
 			.logo-image {
-				background: url(../images/logo4.png) 0 0 no-repeat;
+				background: url(../images/logo.jpg) 0 0 no-repeat;
 				background-size: 100%;
 				background-position: center;
 				height: 100px;
@@ -128,7 +128,7 @@ header {
   	background:url(../images/head5.png) center center no-repeat;
   	background-size: contain;
   	position: relative;
-  	height: 100vh;
+  	height: 90vh;
   	width: 90%;
   	margin: 0 auto;
   	max-width: 400px;
@@ -588,6 +588,7 @@ footer {
 
 		.banner-image {
 			max-width: 450px;
+			height: 100vh;
 		}
 	}
 

@@ -3,27 +3,21 @@
   <div class="wrapper container">
         <a href="{{ site.baseurl }}/index.html"><div class="title">
           <h1>Emily DeVoll</h1>
-          <h3>UI/UX Designer</h3>
+          <h3>Product Designer</h3>
         </div></a>
 
         <div class="image-wrapper"><a href="{{ site.baseurl }}/index.html">
           <div class="logo-image"></div>
         </a></div>
     <nav class="site-nav">
-      
+
       <div class="trigger">
+      <a href="{{ site.baseurl }}/">Home</a>
       <a href="{{ site.baseurl }}/#about">About</a>
       <a href="{{ site.baseurl }}/#work">Work</a>
-        {% for page in site.pages %}
-          {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %}
-          <!-- <a href="{{ site.baseurl }}/portfolio.html/#about">About</a> -->
       </div>
     </nav>
 
   </div>
 
 </header>
-

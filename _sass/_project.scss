@@ -1,5 +1,4 @@
 .project-hero {
-    background-size: cover;
     height: 390px;
     position: relative;
 
@@ -30,18 +29,22 @@
 
 #jumpstart-hero {
     background: url(../projects/images/jumpstart_head.png) no-repeat center center;
+    background-size: cover;
 }
 
 #twelfth-man-hero {
     background: url(../projects/images/12mf_head.png) no-repeat center center;
+    background-size: cover;
 }
 
 #autopets-hero {
     background: url(../projects/images/autopets_head.png) no-repeat center center;
+    background-size: cover;
 }
 
 #cotw-hero {
     background: url(../projects/images/cotw_head.png) no-repeat center center;
+    background-size: cover;
 }
 
 .project {

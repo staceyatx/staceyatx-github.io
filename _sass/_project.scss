@@ -1,0 +1,418 @@
+.project-hero {
+    background-size: cover;
+    height: 390px;
+    position: relative;
+
+    .hero-text {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+
+        h1 {
+    		font-family: $header-font;
+    		font-size: 35px;
+    		text-transform: uppercase;
+    		color: $cream;
+    		-webkit-font-smoothing: antialiased;
+    		text-align: center;
+    		// text-shadow: 2px 4px 2px rgba(0,0,0,.2);
+    	}
+
+    	h2 {
+    		color: $cream;
+            padding-top: 10px;
+    		text-align: center;
+    	}
+    }
+
+}
+
+#jumpstart-hero {
+    background: url(../projects/images/jumpstart_head.png) no-repeat center center;
+}
+
+#twelfth-man-hero {
+    background: url(../projects/images/12mf_head.png) no-repeat center center;
+}
+
+#autopets-hero {
+    background: url(../projects/images/autopets_head.png) no-repeat center center;
+}
+
+#cotw-hero {
+    background: url(../projects/images/cotw_head.png) no-repeat center center;
+}
+
+.project {
+    padding: 0;
+    margin: 0 auto;
+
+    article {
+        padding: 40px 20px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .top {
+        color: $purple;
+        text-decoration: none;
+        font-style: italic;
+        // border-bottom: 2px solid $orange;
+        font-weight: 500;
+        box-shadow: inset 0 -3px 0 $orange;
+        font-family: $paragraph-font;
+        float: right;
+
+        &:hover {
+            border-bottom: 2px solid $orange;
+            color: $seafoam;
+        }
+    }
+
+
+    h1 {
+        font-family: $header-font;
+        font-size: 38px;
+        color: $seafoam;
+        padding-bottom: 10px;
+        // padding-top: 100px;
+    }
+
+    h2 {
+        padding-bottom: 30px;
+        width: 70%;
+        float: left;
+    }
+
+    h3 {
+        font-size: 32px;
+        margin: 0 auto;
+        max-width: 680px;
+        padding: 10px 0 25px 0;
+    }
+
+    p {
+        font-family: $paragraph-font;
+        color: $purple;
+        font-size: 16px;
+        line-height: 160%;
+        margin: 0 auto;
+        max-width: 680px;
+        padding-bottom: 20px;
+
+        a {
+            color: $purple;
+            text-decoration: none;
+            font-style: italic;
+            // border-bottom: 2px solid $orange;
+            font-weight: 500;
+            box-shadow: inset 0 -3px 0 $orange;
+        }
+
+        a:hover {
+             border-bottom: 2px solid $orange;
+            color: $seafoam;
+        }
+    }
+
+    .about {
+        background: $seafoam;
+        margin: 0 auto;
+        clear: both;
+
+        p:first-of-type {
+            padding-top: 10px;
+        }
+    }
+
+    .parent-container1 {
+        margin: 0 auto;
+        // width: 300px;
+        margin-bottom: 20px;
+        margin-top: 5px;
+        text-align: center;
+
+        img {
+            margin: 0 auto;
+            height: 200px;
+        }
+
+        // &:last-of-type {
+
+        //   img {
+        //     height: 300px;
+        //   }
+        // }
+    }
+
+    .screens {
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .research,
+    .design {
+        background: $purple;
+
+        p:first-of-type {
+            padding-top: 10px;
+        }
+
+        p {
+            color: $cream;
+        }
+
+        h3 {
+            color: $seafoam;
+        }
+
+        .parent-container2 {
+            padding: 10px 0;
+            margin: 0 auto;
+            text-align: center;
+            padding: 10px 0;
+
+            img {
+                height: 128px;
+                max-width: 100%;
+                text-align: center;
+            }
+        }
+
+    }
+
+    .interactions {
+        padding-bottom: 50px;
+
+        h3 {
+            color: $purple;
+            padding-bottom: 40px;
+        }
+
+        .interactions-image {
+            text-align: center;
+            width: 100%;
+        }
+
+    }
+
+    .challenges {
+
+        h3 {
+            color: $seafoam;
+        }
+
+    }
+
+    .more {
+        background: $seafoam;
+        padding-bottom: 80px;
+
+        .more-links {
+            margin: 0 auto;
+            max-width: 680px;
+
+            a {
+                font-family: $paragraph-font;
+                font-size: 18px;
+                text-decoration: none;
+                color: $purple;
+                margin: 20px 50px 0 0;
+                // border-bottom: 2px solid $orange;
+                font-weight: 500;
+                line-height: 40px;
+                box-shadow: inset 0 -3px 0 $orange;
+                max-width: 680px;
+                white-space: nowrap;
+            }
+
+            a:hover {
+                border-bottom: 2px solid $orange;
+                color: $cream;
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: 660px) {
+
+  .backyard {
+    max-width: 580px;
+    padding: 50px 20px 20px 20px;
+
+    h1 {
+      font-size: 36px;
+      clear: both;
+    }
+
+    h3 {
+      font-size: 34px;
+    }
+
+    p {
+      font-size: 17px;
+    }
+
+    .backyard-about {
+      // width: 90%;
+      // max-width: 650px;
+
+      .parent-container1 {
+        padding-right: 20px;
+        float: left;
+        margin-bottom: 0;
+
+        img {
+          height: 230px;
+        }
+      }
+
+      p {
+        clear: none;
+        font-size: 17px;
+
+        &:first-of-type {
+          // padding-top: 30px;
+        }
+      }
+    }
+
+    .backyard-research {
+      clear: both;
+
+      .parent-container2 {
+        padding: 15px 0;
+
+        img {
+          height: 240px;
+        }
+      }
+    }
+
+    .backyard-design {
+
+      .parent-container {
+        padding: 15px 0;
+
+        img {
+          height: 190px;
+        }
+      }
+
+      #open-popup {
+
+        img {
+          max-width: 490px;
+        }
+      }
+    }
+
+
+    .backyard-icons {
+
+      .parent-container4 {
+        padding: 15px 0;
+
+        img {
+          height: 130px;
+        }
+      }
+    }
+
+    .backyard-challenges {
+
+      h3 {
+        padding-bottom: 40px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 862px) {
+
+  #portfolio-pages {
+    position: absolute;
+  }
+
+  .backyard {
+
+    max-width: 650px;
+
+    h1 {
+      font-size: 45px;
+    }
+
+    h2 {
+      font-size: 22px;
+    }
+
+    h3 {
+      font-size: 38px;
+    }
+
+    p {
+      font-size: 17px;
+    }
+
+    .backyard-about {
+      padding-top: 20px;
+      max-width: 630px;
+      padding-bottom: 10px;
+
+      p {
+        font-size: 17px;
+
+        &:nth-of-type(2) {
+          text-indent: 0px;
+        }
+      }
+
+      .parent-container1 {
+
+        img {
+          height: 250px;
+        }
+      }
+    }
+
+    .backyard-research {
+        .parent-container2 {
+
+            img {
+                height: 280px;
+            }
+        }
+    }
+
+    .backyard-design {
+
+      .parent-container {
+
+        img {
+          height: 220px;
+        }
+      }
+
+      .parent-container3 {
+
+        img {
+          height: 300px;
+        }
+      }
+    }
+
+    .backyard-icons {
+
+      .parent-container4 {
+
+        img {
+          height: 140px;
+        }
+      }
+    }
+  }
+}

@@ -49,6 +49,7 @@ h3 {
 
 p {
 	font-family: $paragraph-font;
+	font-weight: 400;
 	color: $purple;
 	line-height: 1.75em;
 	-webkit-font-smoothing: antialiased;
@@ -57,7 +58,6 @@ p {
 header {
 	margin: 0 auto;
 	background-color: $purple;
-	border-bottom: 2px solid $cream;
 	height: 45px;
 	width: 100%;
 	position: relative;
@@ -116,7 +116,7 @@ header {
 }
 
 .banner {
-	background-color: $seafoam;
+	background-color: #C3EFD7;
 	position: relative;
 }
 
@@ -134,7 +134,7 @@ header {
   		@include bounce;
 	  	position: absolute;
 	  	bottom: 32px;
-	  	left: 44%;
+	  	left: 46%;
 	  	width: 42px;
 	  	height: 42px;
 	  	background-image: url(../images/down1.png);
@@ -191,7 +191,7 @@ header {
 			padding: 10px 20px 10px 20px;
 			line-height: 1.75em;
 			max-width: 510px;
-			font-weight: 300;
+			font-weight: 400;
 			-webkit-font-smoothing: antialiased;
 		}
 
@@ -275,7 +275,7 @@ header {
 					color: $cream;
 					line-height: 2;
 					list-style-type: circle;
-					font-weight: 300;
+					font-weight: 400;
 					-webkit-font-smoothing: antialiased;
 					font-size: 15px;
 				}
@@ -451,10 +451,7 @@ header {
 		.image-wrapper {
 
 			.image {
-				background: linear-gradient(
-			      rgba(0, 0, 0, 0.01),
-			      rgba(0, 0, 0, 0.2)
-			    ), url(../images/jumpstart.png) center center no-repeat;
+				background: url(../images/jumpstart.png) center center no-repeat;
 				background-size: cover;
 				width: 100%;
 				height: 100vh;
@@ -467,10 +464,7 @@ header {
 		.image-wrapper {
 
 			.image {
-				background: linear-gradient(
-			      rgba(0, 0, 0, 0.05),
-			      rgba(0, 0, 0, 0.31)
-			    ), url(../images/autopets.png) center center no-repeat;
+				background: url(../images/autopets.png) center center no-repeat;
 				background-size: cover;
 				width: 100%;
 				height: 100vh;
@@ -483,10 +477,7 @@ header {
 		.image-wrapper {
 
 			.image {
-				background: linear-gradient(
-			      rgba(0, 0, 0, 0.05),
-			      rgba(0, 0, 0, 0.0)
-			    ), url(../images/cotw.png) center center no-repeat;
+				background: url(../images/cotw.png) center center no-repeat;
 				background-size: cover;
 				width: 100%;
 				height: 100vh;
@@ -499,10 +490,7 @@ header {
 		.image-wrapper {
 
 			.image {
-				background: linear-gradient(
-			      rgba(0, 0, 0, 0.5),
-			      rgba(0, 0, 0, 0.2)
-			    ), url(../images/12mf.png) center center no-repeat;
+				background: url(../images/12mf.png) center center no-repeat;
 				background-size: cover;
 				width: 100%;
 				height: 100vh;
@@ -517,7 +505,7 @@ header {
 @media screen and (min-width: 660px) {
 
 	header {
-		height: 66px;
+		height: 60px;
 		margin-top: 0 auto;
 		width: 100%;
 		position: relative;
@@ -533,7 +521,7 @@ header {
 
 				h1 {
 					text-align: left;
-					padding: 19px 25px 10px 15px;
+					padding: 15px 25px 10px 15px;
 					font-size: 30px;
 					text-transform: uppercase;
 					color: $seafoam;
@@ -559,11 +547,11 @@ header {
 			nav {
 				float: right;
 				margin: auto;
-				padding-top: 24px;
+				padding-top: 18px;
 				margin-left: -5px;
 
 				a {
-					font-size: 20px;
+					font-size: 22px;
 				}
 
 				a:last-child {
@@ -576,8 +564,9 @@ header {
 	.banner {
 
 		.banner-image {
-			max-width: 450px;
+			max-width: 500px;
 			height: 100vh;
+			padding-top: 20px;
 		}
 	}
 
@@ -669,9 +658,9 @@ header {
 					float: left;
 					text-align: left;
 					display: block;
-					font-size: 20px;
+					font-size: 23px;
 					text-transform: uppercase;
-					padding-top: 23px;
+					padding-top: 18px;
 					margin-left: -10px;
 				}
 			}
@@ -688,7 +677,7 @@ header {
 
 			nav {
 				float: right;
-				padding-top: 24px;
+				padding-top: 18px;
 
 				a {
 					margin: 10px 0 10px 15px;
@@ -704,8 +693,8 @@ header {
 			height: 98vh;
 
 			.arrow {
-				width: 55px;
- 				height: 55px;
+				width: 40px;
+ 				height: 40px;
  			}
 		}
 	}
